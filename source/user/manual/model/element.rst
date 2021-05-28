@@ -58,6 +58,7 @@ The following subsections contain information about **$eleType** and the number 
    elements/BeamWithHingesElement
    elements/DisplacementBasedBeamColumnElement
    elements/ForceBasedBeamColumnElement
+   elements/gradientInelasticBeamColumn   
    elements/FlexureShearInteractionDisplacementBasedBeamColumnElement
    elements/MVLEM
    elements/SFI_MVLEM
@@ -68,6 +69,7 @@ The following subsections contain information about **$eleType** and the number 
 .. toctree::
    :maxdepth: 1
 
+   elements/ASDShellQ4
    elements/Quad
    elements/SSPquad
    elements/Shell
