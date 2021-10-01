@@ -3,3 +3,8 @@
 *********************
 Extending Application
 *********************
+
+.. toctree::
+  
+  contribute/component
+
