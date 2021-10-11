@@ -17,7 +17,6 @@ to modify some advaced configuration options.
 
    compile/preliminary
    compile/basic
-   compile/dependencies
    compile/advanced
 
 
