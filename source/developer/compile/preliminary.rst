@@ -47,7 +47,8 @@ step. Different operating systems generally favor a particular tool-chain, but
 the differences between these can generally be hidden by a *build automation*
 tool like CMake.
 
-- https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/
+..
+  - https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/
 
 
 Building OpenSees requires both a C/C++ (these are generally packaged together)
