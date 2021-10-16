@@ -11,15 +11,21 @@ wy-nav-content {
     float: right;
 }
 
+div.wy-side-search{
+	background: #00000f;
+}
 
-#div.wy-side-scroll{
-#	background:#cb463f;
-#}
+/*
+div.wy-side-scroll{
+	background: #cb463f;
+}
+*/
 
-
-#span.caption-text{
-#	color: #000000;
-#}
+/*
+span.caption-text{
+	color: #000000;
+}
+*/
 
 td{
 	white-space: normal !important;
