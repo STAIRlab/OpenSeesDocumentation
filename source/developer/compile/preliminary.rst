@@ -51,8 +51,8 @@ tool like CMake.
   - https://pabloariasal.github.io/2018/02/19/its-time-to-do-cmake-right/
 
 
-Building OpenSees requires both a C/C++ and a Fortran compiler. The following
-Fortran compilers are used most commonly by OpenSees developers
+Building OpenSees requires both a C/C++ and a Fortran compiler. Some suggested
+compilers for various platforms are listed in table-summary_
 
 .. 
   - Windows: `Intel <OneAPI https://software.intel.com/content/www/us/en/develop/tools/oneapi/hpc-toolkit/download.html>`_
@@ -159,6 +159,7 @@ Summary
 The following table gives a brief rundown of the most common configurations for
 various operating systems.
 
+.. _table-summary:
 
 +-----------------------+--------------------+----------------+---------------+
 |          Tool         |       Windows      |      MacOS     |     Linux     |
