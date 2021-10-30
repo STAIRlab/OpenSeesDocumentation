@@ -1,7 +1,7 @@
-.. _build-preliminary:
+.. _build-tooling:
 
-Preliminaries
-=============
+Tooling
+=======
 
 This page introduces some basic tools which may be new to users who have
 not worked with C/C++. Users that are already comfortable with a C/C++
