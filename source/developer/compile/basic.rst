@@ -20,7 +20,7 @@ clone the repository from a terminal by running the following command:
 
 .. code-block:: shell
    
-   ~$ git clone https://github.com/OpenSees/OpenSees
+   git clone https://github.com/OpenSees/OpenSees
 
 
 If you are planning to contribute changes back to the OpenSees
