@@ -27,6 +27,17 @@ If you are planning to contribute changes back to the OpenSees
 project, you should first *fork* the repository as mentioned in
 :ref:`build-src`. 
 
+Dependencies
+------------
+
+1. CMake
+
+2. Conan
+   .. code-block:: shell
+      
+      python -m pip install conan
+
+
 Tcl is the only dependency required for a basic OpenSees build
 that is not already bundled into the source repository on Github.
 Most Linux distributions and MacOS will already have this installed.
@@ -58,6 +69,7 @@ directly into your default terminal application).
 
    OpenSees $ mkdir build
    OpenSees $ cd build
+   build $ python -m conan
    build $ cmake ..
    build $ cmake --build . --target OpenSeesTcl
 
