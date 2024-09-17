@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>3.4.1. uniaxialMaterial Command &mdash; OpenSees Documentation  documentation</title>
+  <title>3.1.5. uniaxialMaterial Command &mdash; OpenSees Documentation  documentation</title>
   
 
   
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/sg_gallery.css" type="text/css" />
   <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
 
   
@@ -35,15 +36,17 @@
         <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     
     <script type="text/javascript" src="../../../_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="3.4.1.1. Steel01 Material" href="uniaxialMaterials/Steel01.html" />
-    <link rel="prev" title="3.4. Material Commands" href="../materialCommands.html" /> 
+    <link rel="next" title="3.1.5.1. Steel01 Material" href="uniaxialMaterials/Steel01.html" />
+    <link rel="prev" title="3.1.4.3. Rigid Link" href="../model/mp_constraint/rigidLink.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -96,34 +99,68 @@
 <li class="toctree-l1"><a class="reference internal" href="../../interpreters.html">1. OpenSees Interpreters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">2. Installation</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../userManual.html">3. Command Manual</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../modelCommands.html">3.1. Modelling Commands</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../modelCommands.html">3.1. Model Commands</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../model/model.html">3.1.1. model Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/node.html">3.1.2. node Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/spConstraints.html">3.1.3. SP_Constraint Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/mpConstraints.html">3.1.4. MP_Constraint Commands</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.5. uniaxialMaterial Command</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Steel01.html">3.1.5.1. Steel01 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Steel02.html">3.1.5.2. Steel02 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Steel4.html">3.1.5.3. Steel4 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/ReinforcingSteel.html">3.1.5.4. Reinforcing Steel Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/DoddRestrepo.html">3.1.5.5. DoddRestrepo Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/RambergOsgoodSteel.html">3.1.5.6. Ramberg Osgood Steel Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/SteelMPF.html">3.1.5.7. SteelMPF Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/UVCuniaxial.html">3.1.5.8. UVCUniaxial Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/SteelFractureDI.html">3.1.5.9. SteelFractureDI Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/DuctileFracture.html">3.1.5.10. DuctileFracture Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Concrete01.html">3.1.5.11. Concrete01 Material – Zero Tensile Strength</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Concrete02.html">3.1.5.12. Concrete02 Material – Linear Tension Softening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Concrete04.html">3.1.5.13. Concrete04 Material – Popovics Concrete Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/ASDConcrete1D.html">3.1.5.14. ASDConcrete1D Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/GMG_CyclicReinforcedConcrete.html">3.1.5.15. GMG_CyclicReinforcedConcrete Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Hysteretic.html">3.1.5.16. Hysteretic Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/HystereticSM.html">3.1.5.17. HystereticSM Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/IMKBilin.html">3.1.5.18. IMKBilin Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/IMKPeakOriented.html">3.1.5.19. IMKPeakOriented Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/IMKPinching.html">3.1.5.20. IMKPinching Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/SLModel.html">3.1.5.21. SLModel Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/BoucWenInfill.html">3.1.5.22. BoucWenInfill Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/HystereticPoly.html">3.1.5.23. HystereticPoly Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/HystereticAsym.html">3.1.5.24. HystereticAsym Material (Smooth asymmetric hysteresis)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/HystereticSmooth.html">3.1.5.25. HystereticSmooth Material (Smooth hysteretic material)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/DowelType.html">3.1.5.26. DowelType Timber Joint Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/CoulombDamper.html">3.1.5.27. CoulombDamper Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/HertzDamp.html">3.1.5.28. Hertz Damp Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/JankowskiImpact.html">3.1.5.29. Jankowski Impact Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/ViscoelasticGap.html">3.1.5.30. Viscoelastic Gap Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Ratchet.html">3.1.5.31. Ratchet Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/PySimple1.html">3.1.5.32. PySimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/TzSimple1.html">3.1.5.33. TzSimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/QzSimple1.html">3.1.5.34. QzSimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/PyLiq1.html">3.1.5.35. PyLiq1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/TzLiq1.html">3.1.5.36. TzLiq1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/QzLiq1.html">3.1.5.37. QzLiq1 Material</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html">3.1.6. nDMaterial Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../section.html">3.1.7. section Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/geomTransf.html">3.1.8. Geometric Transformation Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/beamIntegration.html">3.1.9. Beam integration Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/element.html">3.1.10. Element Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/timeSeries.html">3.1.11. Time Series Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/pattern.html">3.1.12. Pattern Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../model/damping.html">3.1.13. Damping Commands</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../analysisCommands.html">3.2. Analysis Commands</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../outputCommands.html">3.3. Output Commands</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../materialCommands.html">3.4. Material Commands</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">3.4.1. uniaxialMaterial Command</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Steel01.html">3.4.1.1. Steel01 Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/Steel02.html">3.4.1.2. Steel02 Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/SteelFractureDI.html">3.4.1.3. SteelFractureDI Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/DuctileFracture.html">3.4.1.4. DuctileFracture Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/HystereticPoly.html">3.4.1.5. HystereticPoly Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/DowelType.html">3.4.1.6. DowelType Timber Joint Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/PySimple1.html">3.4.1.7. PySimple1 Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/TzSimple1.html">3.4.1.8. TzSimple1 Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/QzSimple1.html">3.4.1.9. QzSimple1 Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/PyLiq1.html">3.4.1.10. PyLiq1 Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/TzLiq1.html">3.4.1.11. TzLiq1 Material</a></li>
-<li class="toctree-l4"><a class="reference internal" href="uniaxialMaterials/QzLiq1.html">3.4.1.12. QzLiq1 Material</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="ndMaterial.html">3.4.2. nDMaterial Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="section.html">3.4.3. section Command</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../miscCommands.html">3.5. Misc. Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../miscCommands.html">3.4. Misc. Commands</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../userExamples.html">4. Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../messageBoard.html">5. Questions, Bugs &amp; Feauture Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../messageBoard.html">5. Questions, Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../developer/license.html">6. Copyright and License</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Framework for Developer</span></p>
@@ -132,7 +169,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../developer/build.html">2. Building Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../developer/references.html">3. References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../developer/extend.html">4. Extending Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../developer/contribute.html">5. Contributing Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer/contribute.html">5. Contributing Code &amp; Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../developer/issues.html">6. Issues</a></li>
 </ul>
 
@@ -184,9 +221,9 @@
         
           <li><a href="../../userManual.html"><span class="section-number">3. </span>Command Manual</a> &raquo;</li>
         
-          <li><a href="../materialCommands.html"><span class="section-number">3.4. </span>Material Commands</a> &raquo;</li>
+          <li><a href="../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a> &raquo;</li>
         
-      <li><span class="section-number">3.4.1. </span>uniaxialMaterial Command</li>
+      <li><span class="section-number">3.1.5. </span>uniaxialMaterial Command</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -206,7 +243,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="uniaxialmaterial-command">
-<span id="uniaxialmaterial"></span><h1><span class="section-number">3.4.1. </span>uniaxialMaterial Command<a class="headerlink" href="#uniaxialmaterial-command" title="Permalink to this headline">¶</a></h1>
+<span id="uniaxialmaterial"></span><h1><span class="section-number">3.1.5. </span>uniaxialMaterial Command<a class="headerlink" href="#uniaxialmaterial-command" title="Permalink to this heading">¶</a></h1>
 <p>This command is used to construct a uniaxial material, which provides a uniaxial stress-strain (or force-deformation) relationships.
 .</p>
 <dl class="py function">
@@ -242,80 +279,88 @@
 </tbody>
 </table>
 <p>The following subsections contain information about <strong>$matType</strong></p>
+<ol class="arabic">
+<li><p>Steel &amp; Reinforcing-Steel Materials</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Steel01.html">3.1.5.1. Steel01 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Steel02.html">3.1.5.2. Steel02 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Steel4.html">3.1.5.3. Steel4 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/ReinforcingSteel.html">3.1.5.4. Reinforcing Steel Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/DoddRestrepo.html">3.1.5.5. DoddRestrepo Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/RambergOsgoodSteel.html">3.1.5.6. Ramberg Osgood Steel Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/SteelMPF.html">3.1.5.7. SteelMPF Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/UVCuniaxial.html">3.1.5.8. UVCUniaxial Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/SteelFractureDI.html">3.1.5.9. SteelFractureDI Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/DuctileFracture.html">3.1.5.10. DuctileFracture Material</a></li>
+</ul>
+</div>
+</li>
+<li><p>Concrete Materials</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Concrete01.html">3.1.5.11. Concrete01 Material – Zero Tensile Strength</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Concrete02.html">3.1.5.12. Concrete02 Material – Linear Tension Softening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Concrete04.html">3.1.5.13. Concrete04 Material – Popovics Concrete Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/ASDConcrete1D.html">3.1.5.14. ASDConcrete1D Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/GMG_CyclicReinforcedConcrete.html">3.1.5.15. GMG_CyclicReinforcedConcrete Material</a></li>
+</ul>
+</div>
+</li>
+</ol>
 <ol class="arabic simple">
-<li><p>Steel &amp; Reinforcing-Steel Materials</p></li>
+<li><p>Some Standard Uniaxial Materials</p></li>
 </ol>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Steel01.html">3.4.1.1. Steel01 Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Steel02.html">3.4.1.2. Steel02 Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/SteelFractureDI.html">3.4.1.3. SteelFractureDI Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/DuctileFracture.html">3.4.1.4. DuctileFracture Material</a></li>
-</ul>
 </div>
-<p>#. Concrete Materials
-uniaxialMaterials/Concrete01
-uniaxialMaterials/Concrete02
-uniaxialMaterials/Concrete04
-uniaxialMaterials/Concrete06
-uniaxialMaterials/Concrete07
-uniaxialMaterials/Concrete01
-uniaxialMaterials/ConfinedConcrete01
-uniaxialMaterials/ConcreteD
-uniaxialMaterials/FRPConfinedConcrete
-uniaxialMaterials/ConcreteCM</p>
-<p>#. Some Standard Uniaxial Materials
-uniaxialMaterials/Elastic
-uniaxialMaterials/ElasticPP
-uniaxialMaterials/ElasticPP_Gap
-uniaxialMaterials/ElasticNoTension
-uniaxialMaterials/ElasticBilin
-uniaxialMaterials/ElasticMultiLinear
-uniaxialMaterials/MultiLinear
-uniaxialMaterials/Parallel
-uniaxialMaterials/Series
-uniaxialMaterials/InitialStrain
-uniaxialMaterials/InitialStress
-uniaxialMaterials/MinMax</p>
-<p>#. Other Uniaxial Materials
-uniaxialMaterials/CastFuse
-uniaxialMaterials/ViscousDamper
-uniaxialMaterials/BilinearOilDamper
-uniaxialMaterials/Modified Ibarra-Medina-Krawinkler Deterioration Model with Bilinear Hysteretic Response (Bilin Material)
-uniaxialMaterials/Modified Ibarra-Medina-Krawinkler Deterioration Model with Peak-Oriented Hysteretic Response (ModIMKPeakOriented Material)
-uniaxialMaterials/Modified Ibarra-Medina-Krawinkler Deterioration Model with Pinched Hysteretic Response (ModIMKPinching Material)
-uniaxialMaterials/SAWS
-uniaxialMaterials/BARSLIP
-uniaxialMaterials/Bond_SP01 - - Strain Penetration Model for Fully Anchored Steel Reinforcing Bars
-uniaxialMaterials/Fatigue
-uniaxialMaterials/Hardening
-uniaxialMaterials/Impact
-uniaxialMaterials/Hyperbolic Gap
-uniaxialMaterials/LimitState
-uniaxialMaterials/PathIndependent
-uniaxialMaterials/Pinching4
-uniaxialMaterials/Engineered Cementitious Composites
-uniaxialMaterials/SelfCentering
-uniaxialMaterials/Viscous
-uniaxialMaterials/BoucWen
-uniaxialMaterials/BWBN (Pinching Hysteretic Bouc-Wen)</p>
+<ol class="arabic">
+<li><p>Generic Multilinear Hysteretic Materials</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/HystereticPoly.html">3.4.1.5. HystereticPoly Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/DowelType.html">3.4.1.6. DowelType Timber Joint Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Hysteretic.html">3.1.5.16. Hysteretic Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/HystereticSM.html">3.1.5.17. HystereticSM Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/IMKBilin.html">3.1.5.18. IMKBilin Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/IMKPeakOriented.html">3.1.5.19. IMKPeakOriented Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/IMKPinching.html">3.1.5.20. IMKPinching Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/SLModel.html">3.1.5.21. SLModel Material</a></li>
 </ul>
 </div>
+</li>
+</ol>
+<ol class="arabic simple">
+<li><p>Wrapper Uniaxial Materials</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+<ol class="arabic">
+<li><p>Other Uniaxial Materials</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/BoucWenInfill.html">3.1.5.22. BoucWenInfill Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/HystereticPoly.html">3.1.5.23. HystereticPoly Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/HystereticAsym.html">3.1.5.24. HystereticAsym Material (Smooth asymmetric hysteresis)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/HystereticSmooth.html">3.1.5.25. HystereticSmooth Material (Smooth hysteretic material)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/DowelType.html">3.1.5.26. DowelType Timber Joint Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/CoulombDamper.html">3.1.5.27. CoulombDamper Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/HertzDamp.html">3.1.5.28. Hertz Damp Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/JankowskiImpact.html">3.1.5.29. Jankowski Impact Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/ViscoelasticGap.html">3.1.5.30. Viscoelastic Gap Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/Ratchet.html">3.1.5.31. Ratchet Material</a></li>
+</ul>
+</div>
+</li>
+</ol>
 <ol class="arabic simple">
 <li><p>PyTzQz uniaxial materials for p-y, t-z and q-z elements</p></li>
 </ol>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/PySimple1.html">3.4.1.7. PySimple1 Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/TzSimple1.html">3.4.1.8. TzSimple1 Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/QzSimple1.html">3.4.1.9. QzSimple1 Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/PyLiq1.html">3.4.1.10. PyLiq1 Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/TzLiq1.html">3.4.1.11. TzLiq1 Material</a></li>
-<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/QzLiq1.html">3.4.1.12. QzLiq1 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/PySimple1.html">3.1.5.32. PySimple1 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/TzSimple1.html">3.1.5.33. TzSimple1 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/QzSimple1.html">3.1.5.34. QzSimple1 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/PyLiq1.html">3.1.5.35. PyLiq1 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/TzLiq1.html">3.1.5.36. TzLiq1 Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uniaxialMaterials/QzLiq1.html">3.1.5.37. QzLiq1 Material</a></li>
 </ul>
 </div>
 </div>
@@ -330,7 +375,7 @@ uniaxialMaterials/BWBN (Pinching Hysteretic Bouc-Wen)</p>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2020, The Regents of the University of California.
+        &#169; Copyright 2022, The Regents of the University of California.
 
     </p>
   </div>

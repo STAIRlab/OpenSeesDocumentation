@@ -14,12 +14,13 @@ The following contain information about algorithmType? and the args required for
 
 .. toctree::
 
-   LinearAlgorithm
-   Newton
+   algorithm/LinearAlgorithm
+   algorithm/Newton
+   algorithm/NewtonLineSearch
+   algorithm/ModifiedNewton
+   algorithm/KrylovNewton
+   algorithm/SecantNewton
+   algorithm/BFGS
+   algorithm/Broyden
+   algorithm/ExpressNewton
 
-NewtonLineSearch
-ModifiedNewton
-KrylovNewton
-SecantNewton
-BFGS
-Broyden

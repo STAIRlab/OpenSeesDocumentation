@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sg_gallery.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
 
   
@@ -35,7 +36,9 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -95,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="user/install.html">2. Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user/userManual.html">3. Command Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user/userExamples.html">4. Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user/messageBoard.html">5. Questions, Bugs &amp; Feauture Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/messageBoard.html">5. Questions, Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developer/license.html">6. Copyright and License</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Framework for Developer</span></p>
@@ -104,7 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="developer/build.html">2. Building Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developer/references.html">3. References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developer/extend.html">4. Extending Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developer/contribute.html">5. Contributing Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer/contribute.html">5. Contributing Code &amp; Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="developer/issues.html">6. Issues</a></li>
 </ul>
 
@@ -176,6 +179,7 @@
 
 <div class="genindex-jumpbox">
  <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
  | <a href="#E"><strong>E</strong></a>
  | <a href="#G"><strong>G</strong></a>
  | <a href="#W"><strong>W</strong></a>
@@ -188,17 +192,40 @@
     built-in function
 
       <ul>
-        <li><a href="user/manual/model/elements/dispBeamColumnAsym.html#element">element()</a>, <a href="user/manual/model/elements/gradientInelasticBeamColumn.html#element">[1]</a>, <a href="user/manual/model/elements/mixedBeamColumnAsym.html#element">[2]</a>
+        <li><a href="user/manual/material/matTestCommands.html#commitStrain">commitStrain()</a>
+</li>
+        <li><a href="user/manual/model/elements/BeamColumnJoint.html#element">element()</a>, <a href="user/manual/model/elements/ElasticTubularJoint.html#element">[1]</a>, <a href="user/manual/model/elements/Inno3DPnPJoint.html#element">[2]</a>, <a href="user/manual/model/elements/Joint2D.html#element">[3]</a>, <a href="user/manual/model/elements/LehighJoint2D.html#element">[4]</a>, <a href="user/manual/model/elements/dispBeamColumnAsym.html#element">[5]</a>, <a href="user/manual/model/elements/gradientInelasticBeamColumn.html#element">[6]</a>, <a href="user/manual/model/elements/mixedBeamColumnAsym.html#element">[7]</a>
 </li>
         <li><a href="user/manual/misc/exit.html#id0">exit()</a>
 </li>
         <li><a href="user/manual/misc/getCrdTransfTags.html#getCrdTransfTags">getCrdTransfTags()</a>
+</li>
+        <li><a href="user/manual/material/matTestCommands.html#getDampTangent">getDampTangent()</a>
+</li>
+        <li><a href="user/manual/material/matTestCommands.html#getStrain">getStrain()</a>
+</li>
+        <li><a href="user/manual/material/matTestCommands.html#getStress">getStress()</a>
+</li>
+        <li><a href="user/manual/material/matTestCommands.html#getTangent">getTangent()</a>
 </li>
         <li><a href="user/manual/misc/getTime.html#getTime">getTime()</a>
 </li>
         <li><a href="user/manual/misc/wipe.html#id0">wipe()</a>
 </li>
         <li><a href="user/manual/misc/wipeAnalysis.html#wipeAnalsyis">wipeAnalsyis()</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    commitStrain()
+
+      <ul>
+        <li><a href="user/manual/material/matTestCommands.html#commitStrain">built-in function</a>
 </li>
       </ul></li>
   </ul></td>
@@ -211,7 +238,7 @@
     element()
 
       <ul>
-        <li><a href="user/manual/model/elements/dispBeamColumnAsym.html#element">built-in function</a>, <a href="user/manual/model/elements/gradientInelasticBeamColumn.html#element">[1]</a>, <a href="user/manual/model/elements/mixedBeamColumnAsym.html#element">[2]</a>
+        <li><a href="user/manual/model/elements/BeamColumnJoint.html#element">built-in function</a>, <a href="user/manual/model/elements/ElasticTubularJoint.html#element">[1]</a>, <a href="user/manual/model/elements/Inno3DPnPJoint.html#element">[2]</a>, <a href="user/manual/model/elements/Joint2D.html#element">[3]</a>, <a href="user/manual/model/elements/LehighJoint2D.html#element">[4]</a>, <a href="user/manual/model/elements/dispBeamColumnAsym.html#element">[5]</a>, <a href="user/manual/model/elements/gradientInelasticBeamColumn.html#element">[6]</a>, <a href="user/manual/model/elements/mixedBeamColumnAsym.html#element">[7]</a>
 </li>
       </ul></li>
   </ul></td>
@@ -236,8 +263,36 @@
         <li><a href="user/manual/misc/getCrdTransfTags.html#getCrdTransfTags">built-in function</a>
 </li>
       </ul></li>
+      <li>
+    getDampTangent()
+
+      <ul>
+        <li><a href="user/manual/material/matTestCommands.html#getDampTangent">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    getStrain()
+
+      <ul>
+        <li><a href="user/manual/material/matTestCommands.html#getStrain">built-in function</a>
+</li>
+      </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    getStress()
+
+      <ul>
+        <li><a href="user/manual/material/matTestCommands.html#getStress">built-in function</a>
+</li>
+      </ul></li>
+      <li>
+    getTangent()
+
+      <ul>
+        <li><a href="user/manual/material/matTestCommands.html#getTangent">built-in function</a>
+</li>
+      </ul></li>
       <li>
     getTime()
 
@@ -281,7 +336,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2020, The Regents of the University of California.
+        &#169; Copyright 2022, The Regents of the University of California.
 
     </p>
   </div>

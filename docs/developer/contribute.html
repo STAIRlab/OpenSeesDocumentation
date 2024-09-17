@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>5. Contributing Code &mdash; OpenSees Documentation  documentation</title>
+  <title>5. Contributing Code &amp; Documentation &mdash; OpenSees Documentation  documentation</title>
   
 
   
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/sg_gallery.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
 
   
@@ -35,7 +36,9 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -97,7 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../user/install.html">2. Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/userManual.html">3. Command Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../user/userExamples.html">4. Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../user/messageBoard.html">5. Questions, Bugs &amp; Feauture Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user/messageBoard.html">5. Questions, Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="license.html">6. Copyright and License</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Framework for Developer</span></p>
@@ -106,7 +109,14 @@
 <li class="toctree-l1"><a class="reference internal" href="build.html">2. Building Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">3. References</a></li>
 <li class="toctree-l1"><a class="reference internal" href="extend.html">4. Extending Application</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Contributing Code</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Contributing Code &amp; Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#code-contribution">5.1. Code Contribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#documentation">5.2. Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#restructured-text-quickstart">5.2.1. reStructured Text Quickstart</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="issues.html">6. Issues</a></li>
 </ul>
 
@@ -156,7 +166,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">5. </span>Contributing Code</li>
+      <li><span class="section-number">5. </span>Contributing Code &amp; Documentation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,8 +185,73 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="contributing-code">
-<span id="contribute"></span><h1><span class="section-number">5. </span>Contributing Code<a class="headerlink" href="#contributing-code" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="contributing-code-documentation">
+<span id="contribute"></span><h1><span class="section-number">5. </span>Contributing Code &amp; Documentation<a class="headerlink" href="#contributing-code-documentation" title="Permalink to this heading">¶</a></h1>
+<div class="section" id="code-contribution">
+<h2><span class="section-number">5.1. </span>Code Contribution<a class="headerlink" href="#code-contribution" title="Permalink to this heading">¶</a></h2>
+<p>To submit your code contribution (e.g. Material Model, Element) please submit pull request to the <a class="reference external" href="https://github.com/OpenSees/OpenSees">OpenSees Github Page</a>. Please ensure that there is no merge conflict to the OpenSees Repo. Please include documentation!</p>
+</div>
+<div class="section" id="documentation">
+<h2><span class="section-number">5.2. </span>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading">¶</a></h2>
+<p>To contribute documentation, submit a pull request to the <a class="reference external" href="https://github.com/OpenSees/OpenSeesDocumentation">OpenSeesDocumentation GitHub page</a>. OpenSees Documentation use sphinx and reStructured Text format. A dummy example is provided below with .. NOTE: as a comment/simple description. More detailed explanation can be found in <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html">reStructured Text Basic</a></p>
+<div class="section" id="restructured-text-quickstart">
+<h3><span class="section-number">5.2.1. </span>reStructured Text Quickstart<a class="headerlink" href="#restructured-text-quickstart" title="Permalink to this heading">¶</a></h3>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_PageUUID:</span> .. NOTE: This is the GLOBAL Identified for your page. Other page could dynamically link your page by calling <span class="na">:ref:</span><span class="nv">`_PageUUID`</span>
+
+DummyMaterial Material    .. NOTE: Page Title
+^^^^^^^^^^^^^^^^   .. NOTE: This mark the above text (DummyMaterial) as an subsections. &quot;===&quot; is for section, &quot;---&quot; is for subsection, &quot;^^^&quot; is for subsubsection and &#39;&quot;&quot;&quot;&quot;&quot;&quot;&#39; is for paragraph.
+
+<span class="p">..</span> <span class="ow">function</span><span class="p">::</span> integrator GimmeMCK $m $c $k $ki  .. The Function input for your model/element
+
+<span class="p">..</span> <span class="ow">list-table</span><span class="p">::</span>     .. NOTE: Preferred Table Setup. If you need more columns, add an integer value to the widths. Note that this will add columns to every row!
+    <span class="nc">:widths:</span> 10 10 40
+    <span class="nc">:header-rows:</span> 1
+
+<span class="m">*</span> - Argument         .. * marks a new row and - fill a column in the row (left-right order)
+    <span class="m">-</span> Type
+    <span class="m">-</span> Description
+<span class="m">*</span> - $m
+    <span class="m">-</span> |float|
+    <span class="m">-</span> If the value is not zero, add mass matrix to tangent matrix with factored value as large as the input.
+<span class="m">*</span> - $c
+    <span class="m">-</span> |float|
+    <span class="m">-</span> If the value is not zero, add damping matrix to tangent matrix  with factored value as large as the input.
+<span class="m">*</span> - $ki
+    <span class="m">-</span> |float|
+    <span class="m">-</span> If the value is not zero, add the tangent stiffness matrix to tangent matrix  with factored value as large as the input.
+<span class="m">*</span> - $kt
+    <span class="m">-</span> |float|
+    <span class="m">-</span> If the value is not zero, add the initial stiffness matrix to tangent matrix  with factored value as large as the input.
+
+<span class="cp">.. math:</span>
+
+<span class="cp">    \textrm{reStructured Text support Latex Math} \leq \frac{a} {b}</span>
+
+<span class="na">:math:</span><span class="nv">`\frac{a}{b}`</span> In Line Maths
+<span class="p">..</span> <span class="ow">note</span><span class="p">::</span>   .
+    <span class="m">*</span> This is a note
+
+<span class="p">  ..</span> <span class="ow">admonition</span><span class="p">::</span> Example:
+
+
+  <span class="m">1.</span> <span class="gs">**Tcl Code**</span>
+
+<span class="p">  ..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">tcl</span>
+
+      <span class="nv">Code</span><span class="w"> </span>Example<span class="w"> </span>for<span class="w"> </span>TcL<span class="w"> </span>Interpreter
+
+  <span class="m">1.</span> <span class="gs">**Python Code**</span>
+
+<span class="p">  ..</span> <span class="ow">code-block</span><span class="p">::</span> python
+
+      Code Example for Python Interpreter
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 
@@ -189,7 +264,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2020, The Regents of the University of California.
+        &#169; Copyright 2022, The Regents of the University of California.
 
     </p>
   </div>

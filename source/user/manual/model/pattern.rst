@@ -32,7 +32,8 @@ The type of pattern created and the additional arguments required depends on the
 .. toctree::
    :maxdepth: 4
 
-   plainPattern
-   uniformExcitationPattern
-   multiSupportPattern
-   DRM
+   pattern/plainPattern
+   pattern/uniformExcitationPattern
+   pattern/multiSupportPattern
+   pattern/DRM
+   pattern/H5DRM

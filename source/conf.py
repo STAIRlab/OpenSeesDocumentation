@@ -19,7 +19,7 @@ numfig = True
 numfig_secnum_depth = 3
 
 project = 'OpenSees Documentation'
-copyright = '2020, The Regents of the University of California'
+copyright = '2022, The Regents of the University of California'
 author = 'Frank McKenna, Michael Scott, Pedro Arduino, Minjie Zhu'
 html_logo = 'OpenSeesLogo.png'
 
@@ -55,6 +55,8 @@ rst_prolog = """
 .. |chris| replace:: `Chris McGann`_
 .. _Chris McGann: https://www.canterbury.ac.nz/engineering/contact-us/people/chris-mcgann.html
 .. |andreas| replace:: **Andreas Schellenberg**
+.. |silvia| replace:: `Silvia Mazzoni`_
+.. _`Silvia Mazzoni`: https://www.silviasbrainery.com/
 """	
 
 # Add any Sphinx extension module names here, as strings. They can be

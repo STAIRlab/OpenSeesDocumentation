@@ -272,11 +272,10 @@ TSWLatexianTemp*
 latexmkrc
 
 # build folder of the docs
-docs/_build
-docs/build
-
+build/
 # emacs edited files
 *~
 __pycache__
 #*#
 build
+*.fig

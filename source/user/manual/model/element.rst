@@ -54,6 +54,7 @@ The following subsections contain information about **$eleType** and the number 
    :maxdepth: 1
 
    elements/elasticBeamColumn
+   elements/ModElasticBeam
    elements/ElasticBeamColumnElementWithStiffnessModifiers
    elements/ElasticTimoshenkoBeamColumnElement
    elements/BeamWithHingesElement
@@ -62,9 +63,12 @@ The following subsections contain information about **$eleType** and the number 
    elements/gradientInelasticBeamColumn   
    elements/FlexureShearInteractionDisplacementBasedBeamColumnElement
    elements/MVLEM
-   elements/SFI_MVLEM
+   elements/MVLEM_3D
+   elements/SFI_MVLEM_3D
+   elements/E_SFI_MVLEM_3D
    elements/dispBeamColumnAsym
    elements/mixedBeamColumnAsym
+   elements/E_SFI
 
 
 4. Quadrilateral & Shell Elements
@@ -81,6 +85,7 @@ The following subsections contain information about **$eleType** and the number 
    elements/ShellNL
    elements/BbarPlaneStrainQuadrilateral
    elements/EnhancedStrainQuadrilateral
+   elements/MEFI
 
    
 5. Triangles
@@ -91,6 +96,7 @@ The following subsections contain information about **$eleType** and the number 
    elements/Tri31
    elements/ShellDKGT
    elements/ShellNLDKGT
+   elements/ASDShellT3
 
 6. Bricks
 
@@ -107,6 +113,7 @@ The following subsections contain information about **$eleType** and the number 
    :maxdepth: 1
 
    elements/FourNodeTetrahedron
+   elements/TenNodeTetrahedron
 
 
 8. Joint Elements
@@ -117,6 +124,8 @@ The following subsections contain information about **$eleType** and the number 
    elements/BeamColumnJoint
    elements/ElasticTubularJoint
    elements/Joint2D
+   elements/Inno3DPnPJoint
+   elements/LehighJoint2D
 
 9. Link Elements
 
@@ -144,10 +153,11 @@ The following subsections contain information about **$eleType** and the number 
    elements/HDR
    elements/RJ-Watson EQS Bearing
    elements/FPBearingPTV
+   elements/TripleFrictionPendulumX
 
 
 
-#.    U-P Elements (saturated soil)
+11.    U-P Elements (saturated soil)
 
 .. toctree::
    :maxdepth: 1
@@ -163,7 +173,7 @@ The following subsections contain information about **$eleType** and the number 
    elements/SSPquadUP 
    elements/SSPbrickUP
 
-#. Contact
+12. Contact
 
 .. toctree::
    :maxdepth: 1   
@@ -175,14 +185,21 @@ The following subsections contain information about **$eleType** and the number 
    elements/BeamEndContact3D
    elements/zeroLengthImpact3D
    
-#. Cable
+13. Cable
 
 .. toctree::
    :maxdepth: 1   
 
    elements/CatenaryCableElement
 
-#. Misc.
+14. Absorbing Elements
+
+.. toctree::
+   :maxdepth: 1   
+
+   elements/PML
+
+15. Misc.
 
 .. toctree::
    :maxdepth: 1   
@@ -195,4 +212,8 @@ The following subsections contain information about **$eleType** and the number 
    elements/AV3D4
    elements/ASDEmbeddedNodeElement
    elements/ASDAbsorbingBoundary
+   elements/RockingBC
+   elements/FSIFluidBoundaryElement2D
+   elements/FSIFluidElement2D
+   elements/FSIInterfaceElement2D
 
