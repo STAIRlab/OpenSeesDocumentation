@@ -1,101 +1,52 @@
-
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>3.1.8.1. Linear Transformation &mdash; OpenSees Documentation  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sg_gallery.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=224b24c6" />
 
   
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="3.1.8.2. PDelta Transformation" href="PDelta.html" />
     <link rel="prev" title="3.1.8. Geometric Transformation Command" href="../geomTransf.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../../../../index.html">
           
-
-          
+          <a href="../../../../index.html">
             
-            <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
-          
+              <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Applications for Users</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../interpreters.html">1. OpenSees Interpreters</a></li>
@@ -140,79 +91,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer/issues.html">6. Issues</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">OpenSees Documentation</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a> &raquo;</li>
-        
-          <li><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a> &raquo;</li>
-        
-          <li><a href="../geomTransf.html"><span class="section-number">3.1.8. </span>Geometric Transformation Command</a> &raquo;</li>
-        
-      <li><span class="section-number">3.1.8.1. </span>Linear Transformation</li>
-    
-    
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a></li>
+          <li class="breadcrumb-item"><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a></li>
+          <li class="breadcrumb-item"><a href="../geomTransf.html"><span class="section-number">3.1.8. </span>Geometric Transformation Command</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1.8.1. </span>Linear Transformation</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../_sources/user/manual/model/geomTransf/Linear.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="linear-transformation">
-<span id="lineartr"></span><h1><span class="section-number">3.1.8.1. </span>Linear Transformation<a class="headerlink" href="#linear-transformation" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="linear-transformation">
+<span id="lineartr"></span><h1><span class="section-number">3.1.8.1. </span>Linear Transformation<a class="headerlink" href="#linear-transformation" title="Link to this heading"></a></h1>
 <p>This command is used to construct a linear coordinate transformation (LinearCrdTransf) object, which performs a linear geometric transformation of beam stiffness and resisting force from the basic system to the global-coordinate system.</p>
 <ul class="simple">
 <li><p>For a two-dimensional problem:</p></li>
@@ -230,11 +137,11 @@
 <span class="sig-name descname"><span class="pre">geomTransf</span> <span class="pre">Linear</span> <span class="pre">$transfTag</span> <span class="pre">$vecxzX</span> <span class="pre">$vecxzY</span> <span class="pre">$vecxzZ</span> <span class="pre">&lt;-jntOffset</span> <span class="pre">$dXi</span> <span class="pre">$dYi</span> <span class="pre">$dZi</span> <span class="pre">$dXj</span> <span class="pre">$dYj</span> <span class="pre">$dZj&gt;</span></span></dt>
 <dd></dd></dl>
 
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 67%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 66.7%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -268,14 +175,18 @@
 <p>A single vector may be defined by two points. It has length, direction, and location in space. When this vector is used to define a coordinate axis, only its direction is important. Now any 2 vectors, <span class="math notranslate nohighlight">\(V_r\)</span> and <span class="math notranslate nohighlight">\(V_s\)</span>, not parallel, define a plane that is parallel to them both. The cross-product of these vectors define a third vector, <span class="math notranslate nohighlight">\(V_t\)</span>, that is perpendicular to both <span class="math notranslate nohighlight">\(V_r\)</span> and <span class="math notranslate nohighlight">\(V_s\)</span> and hence normal to the plane: <span class="math notranslate nohighlight">\(V_t = V_r . V_s\)</span>.</p>
 <p>The element coordinate system is specified as follows:</p>
 <p>The x-axis is a vector given by the two element nodes; The vector <strong>vecxz</strong> is a vector the user specifies that must not be parallel to the x-axis. The x-axis along with the <strong>vecxz</strong> Vector define the xz plane. The local y-axis is defined by taking the cross product of the x-axis vector and the <strong>vecxz</strong> vector (<span class="math notranslate nohighlight">\(V_y = V_{xz} . V_x\)</span>). The local z-axis is then found simply by taking the cross product of the y-axis and x-axis vectors (<span class="math notranslate nohighlight">\(V_z = V_x . V_y\)</span>). The section is attached to the element such that the y-z coordinate system used to specify the section corresponds to the y-z axes of the element.</p>
-<div class="align-center figure" id="id1">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../../../_images/ElementOrentation.gif"><img alt="../../../../_images/ElementOrentation.gif" src="../../../../_images/ElementOrentation.gif" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.8.1 </span><span class="caption-text">Element Orentation</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-<div class="align-center figure" id="id2">
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.8.1 </span><span class="caption-text">Element Orentation</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../../../_images/RigidElementOffsets.gif"><img alt="../../../../_images/RigidElementOffsets.gif" src="../../../../_images/RigidElementOffsets.gif" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.8.2 </span><span class="caption-text">Rigid Element Offsets</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.8.2 </span><span class="caption-text">Rigid Element Offsets</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When in 2D, local x and y axes are in the X-Y plane, where X and Y are global axes. Local x axis is the axis connecting the two element nodes, and local y and z axes follow the right-hand rule (e.g., if the element is aligned with the positive Y axis, the local y axis is aligned with the negative X axis, and if the element is aligned with the positive X axis, the local y axis is aligned with the positive Y axis). Orientation of local y and z axes is important for definition of the fiber section.</p>
@@ -284,18 +195,24 @@
 <p class="admonition-title">Example:</p>
 <blockquote>
 <div><p>In the following, the linear transformtion commands are provided for the elements shown in the figures.</p>
-<div class="align-center figure" id="id3">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../../../_images/ElementCrossSection.png"><img alt="../../../../_images/ElementCrossSection.png" src="../../../../_images/ElementCrossSection.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.8.3 </span><span class="caption-text">Elements Cross Section</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
-<div class="align-center figure" id="id4">
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.8.3 </span><span class="caption-text">Elements Cross Section</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../../../_images/ElementOrientation.png"><img alt="../../../../_images/ElementOrientation.png" src="../../../../_images/ElementOrientation.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.8.4 </span><span class="caption-text">Elements Orientation</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
-<div class="align-center figure" id="id5">
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.8.4 </span><span class="caption-text">Elements Orientation</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../../../_images/ElementVectors.png"><img alt="../../../../_images/ElementVectors.png" src="../../../../_images/ElementVectors.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.8.5 </span><span class="caption-text">Elements Vectors</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.8.5 </span><span class="caption-text">Elements Vectors</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 <ol class="arabic simple">
 <li><p><strong>Tcl Code</strong></p></li>
@@ -328,63 +245,45 @@
 <div class="line">Code Developed by: Remo Magalhaes de Souza</div>
 <div class="line">Images Developed by: <a class="reference external" href="https://www.silviasbrainery.com/">Silvia Mazzoni</a></div>
 </div>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, The Regents of the University of California.
-
-    </p>
+    <p>&#169; Copyright 2022, The Regents of the University of California.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2431545-1"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-2431545-1', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-    
+      gtag('config', 'UA-2431545-1', {
+          'anonymize_ip': false,
+      });
+    </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

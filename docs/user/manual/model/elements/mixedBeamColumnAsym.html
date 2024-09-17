@@ -1,99 +1,51 @@
-
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>3.1.10.12. Mixed Beam Element (Asymmetric Sections) &mdash; OpenSees Documentation  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sg_gallery.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+  <title>3.1.9.12. Mixed Beam Element (Asymmetric Sections) &mdash; OpenSees Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=224b24c6" />
 
   
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="3.1.10.13. E-SFI Element" href="E_SFI.html" />
-    <link rel="prev" title="3.1.10.11. Displacement-Based Beam Element (Asymmetric Sections)" href="dispBeamColumnAsym.html" /> 
+    <link rel="next" title="3.1.9.13. E-SFI Element" href="E_SFI.html" />
+    <link rel="prev" title="3.1.9.11. Displacement-Based Beam Element (Asymmetric Sections)" href="dispBeamColumnAsym.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../../../../index.html">
           
-
-          
+          <a href="../../../../index.html">
             
-            <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
-          
+              <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Applications for Users</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../interpreters.html">1. OpenSees Interpreters</a></li>
@@ -108,49 +60,48 @@
 <li class="toctree-l3"><a class="reference internal" href="../../material/ndMaterial.html">3.1.6. nDMaterial Command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../section.html">3.1.7. section Command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../geomTransf.html">3.1.8. Geometric Transformation Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../beamIntegration.html">3.1.9. Beam integration Command</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="../element.html">3.1.10. Element Command</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="zeroLength.html">3.1.10.1. ZeroLength Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="zeroLengthSection.html">3.1.10.2. ZeroLength Section Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="zeroLengthND.html">3.1.10.3. ZeroLengthND Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="zeroLengthContactASDimplex.html">3.1.10.4. ZeroLengthContactASDimplex Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="elasticBeamColumn.html">3.1.10.5. Elastic Beam Column Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ModElasticBeam.html">3.1.10.6. Modified Elastic Beam Column Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="gradientInelasticBeamColumn.html">3.1.10.7. Gradient Inelastic (GI) Beam-Column Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="MVLEM_3D.html">3.1.10.8. MVLEM_3D Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SFI_MVLEM_3D.html">3.1.10.9. SFI-MVLEM-3D Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="E_SFI_MVLEM_3D.html">3.1.10.10. E-SFI-MVLEM-3D Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="dispBeamColumnAsym.html">3.1.10.11. Displacement-Based Beam Element (Asymmetric Sections)</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">3.1.10.12. Mixed Beam Element (Asymmetric Sections)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="E_SFI.html">3.1.10.13. E-SFI Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ASDShellQ4.html">3.1.10.14. ASDShellQ4 Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Quad.html">3.1.10.15. Quadrilateral Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SSPquad.html">3.1.10.16. SSPquad Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="MEFI.html">3.1.10.17. MEFI Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ASDShellT3.html">3.1.10.18. ASDShellT3 Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="stdBrick.html">3.1.10.19. stdBrick Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="bbarBrick.html">3.1.10.20. bbarBrick Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SSPbrick.html">3.1.10.21. SSPbrick Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="FourNodeTetrahedron.html">3.1.10.22. FourNodeTetrahedron Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="TenNodeTetrahedron.html">3.1.10.23. TenNodeTetrahedron Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="BeamColumnJoint.html">3.1.10.24. BeamColumnJoint Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ElasticTubularJoint.html">3.1.10.25. ElasticTubularJoint Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Joint2D.html">3.1.10.26. Joint2D Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Inno3DPnPJoint.html">3.1.10.27. Inno3DPnPJoint Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="LehighJoint2D.html">3.1.10.28. LehighJoint2D Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="TripleFrictionPendulumX.html">3.1.10.29. TripleFrictionPendulumX Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="PML.html">3.1.10.30. PML Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ASDEmbeddedNodeElement.html">3.1.10.31. ASDEmbeddedNode Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ASDAbsorbingBoundary.html">3.1.10.32. ASDAbsorbingBoundary Element (2D and 3D)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="RockingBC.html">3.1.10.33. RockingBC Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="FSIFluidBoundaryElement2D.html">3.1.10.34. FSIFluidBoundaryElement2D Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="FSIFluidElement2D.html">3.1.10.35. FSIFluidElement2D Element</a></li>
-<li class="toctree-l4"><a class="reference internal" href="FSIInterfaceElement2D.html">3.1.10.36. FSIInterfaceElement2D Element</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../element.html">3.1.9. Element Command</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="zeroLength.html">3.1.9.1. ZeroLength Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthSection.html">3.1.9.2. ZeroLength Section Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthND.html">3.1.9.3. ZeroLengthND Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="zeroLengthContactASDimplex.html">3.1.9.4. ZeroLengthContactASDimplex Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="elasticBeamColumn.html">3.1.9.5. Elastic Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ModElasticBeam.html">3.1.9.6. Modified Elastic Beam Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="gradientInelasticBeamColumn.html">3.1.9.7. Gradient Inelastic (GI) Beam-Column Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MVLEM_3D.html">3.1.9.8. MVLEM_3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SFI_MVLEM_3D.html">3.1.9.9. SFI-MVLEM-3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="E_SFI_MVLEM_3D.html">3.1.9.10. E-SFI-MVLEM-3D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dispBeamColumnAsym.html">3.1.9.11. Displacement-Based Beam Element (Asymmetric Sections)</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">3.1.9.12. Mixed Beam Element (Asymmetric Sections)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="E_SFI.html">3.1.9.13. E-SFI Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDShellQ4.html">3.1.9.14. ASDShellQ4 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Quad.html">3.1.9.15. Quadrilateral Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPquad.html">3.1.9.16. SSPquad Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="MEFI.html">3.1.9.17. MEFI Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDShellT3.html">3.1.9.18. ASDShellT3 Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="stdBrick.html">3.1.9.19. stdBrick Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bbarBrick.html">3.1.9.20. bbarBrick Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SSPbrick.html">3.1.9.21. SSPbrick Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FourNodeTetrahedron.html">3.1.9.22. FourNodeTetrahedron Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TenNodeTetrahedron.html">3.1.9.23. TenNodeTetrahedron Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BeamColumnJoint.html">3.1.9.24. BeamColumnJoint Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ElasticTubularJoint.html">3.1.9.25. ElasticTubularJoint Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Joint2D.html">3.1.9.26. Joint2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Inno3DPnPJoint.html">3.1.9.27. Inno3DPnPJoint Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="LehighJoint2D.html">3.1.9.28. LehighJoint2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TripleFrictionPendulumX.html">3.1.9.29. TripleFrictionPendulumX Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PML.html">3.1.9.30. PML Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDEmbeddedNodeElement.html">3.1.9.31. ASDEmbeddedNode Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDAbsorbingBoundary.html">3.1.9.32. ASDAbsorbingBoundary Element (2D and 3D)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RockingBC.html">3.1.9.33. RockingBC Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FSIFluidBoundaryElement2D.html">3.1.9.34. FSIFluidBoundaryElement2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FSIFluidElement2D.html">3.1.9.35. FSIFluidElement2D Element</a></li>
+<li class="toctree-l4"><a class="reference internal" href="FSIInterfaceElement2D.html">3.1.9.36. FSIInterfaceElement2D Element</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../timeSeries.html">3.1.11. Time Series Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pattern.html">3.1.12. Pattern Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../damping.html">3.1.13. Damping Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../timeSeries.html">3.1.10. Time Series Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pattern.html">3.1.11. Pattern Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../damping.html">3.1.12. Damping Commands</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../analysisCommands.html">3.2. Analysis Commands</a></li>
@@ -172,79 +123,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer/issues.html">6. Issues</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">OpenSees Documentation</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a> &raquo;</li>
-        
-          <li><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a> &raquo;</li>
-        
-          <li><a href="../element.html"><span class="section-number">3.1.10. </span>Element Command</a> &raquo;</li>
-        
-      <li><span class="section-number">3.1.10.12. </span>Mixed Beam Element (Asymmetric Sections)</li>
-    
-    
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a></li>
+          <li class="breadcrumb-item"><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a></li>
+          <li class="breadcrumb-item"><a href="../element.html"><span class="section-number">3.1.9. </span>Element Command</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1.9.12. </span>Mixed Beam Element (Asymmetric Sections)</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../_sources/user/manual/model/elements/mixedBeamColumnAsym.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="mixed-beam-element-asymmetric-sections">
-<span id="mixedbeamcolumnasym"></span><h1><span class="section-number">3.1.10.12. </span>Mixed Beam Element (Asymmetric Sections)<a class="headerlink" href="#mixed-beam-element-asymmetric-sections" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="mixed-beam-element-asymmetric-sections">
+<span id="mixedbeamcolumnasym"></span><h1><span class="section-number">3.1.9.12. </span>Mixed Beam Element (Asymmetric Sections)<a class="headerlink" href="#mixed-beam-element-asymmetric-sections" title="Link to this heading"></a></h1>
 <p>This command is used to construct a <strong>MixedBeamColumnAsym3d</strong> element object, which is suitable for modeling flexural, flexural-torsionl and torsional buckling of members with asymmetric section such as angles and tees. It can also be used to model members with doublely-symmetric sections. The corotational total Lagrangian method is used to capture the axial-flexural-torsional interaction behavior, while the fiber section method is used for modeling material nonlinearity. The fibers and coordinates of the shear center should be defined with respect to the principal axes of the section. This element can represent a nonlinear curvature field within the element. Note that warping is not considered in this element.</p>
 <p>For more information about the element formulation, please refer to the references at the end of this page.</p>
 <p><strong>TCL ELEMENT COMMAND</strong></p>
@@ -255,11 +162,11 @@
 <dd></dd></dl>
 
 <p>The required arguments are:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 67%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 66.7%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -291,12 +198,12 @@
 </tbody>
 </table>
 <p>The optional arguments are:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 57%" />
+<col style="width: 14.3%" />
+<col style="width: 14.3%" />
+<col style="width: 14.3%" />
+<col style="width: 57.1%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -328,23 +235,25 @@
 </tr>
 </tbody>
 </table>
-<div class="align-center figure" id="id1">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../../../_images/dispBeamColumnAsym_Fig1.jpg"><img alt="../../../../_images/dispBeamColumnAsym_Fig1.jpg" src="../../../../_images/dispBeamColumnAsym_Fig1.jpg" style="width: 408.5px; height: 319.25px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1.10.13 </span><span class="caption-text">Fig. 1: Coordinate systems for members with asymmetric sections (CC’: centroidal axis, SS’: shear center axis)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.9.13 </span><span class="caption-text">Fig. 1: Coordinate systems for members with asymmetric sections (CC’: centroidal axis, SS’: shear center axis)</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
 <p><strong>PYTHON ELEMENT COMMAND</strong></p>
 <p>For 3D problems:</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="element">
-<span class="sig-name descname"><span class="pre">element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">'mixedBeamColumnAsym'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$eleTag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$iNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$jNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$transfTag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$integrTag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'-shearCenter'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$y0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$z0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#element" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">'mixedBeamColumnAsym'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$eleTag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$iNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$jNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$transfTag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$integrTag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'-shearCenter'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$y0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">$z0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#element" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <p>The required arguments are:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 17%" />
-<col style="width: 67%" />
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 66.7%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -372,12 +281,12 @@
 </tbody>
 </table>
 <p>The optional arguments are:</p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 14%" />
-<col style="width: 57%" />
+<col style="width: 14.3%" />
+<col style="width: 14.3%" />
+<col style="width: 14.3%" />
+<col style="width: 57.1%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -606,63 +515,45 @@
 <li><p>Du, X., &amp; Hajjar, J. F. (2021). Three-dimensional nonlinear mixed 6-DOF beam element for thin-walled members. Thin-Walled Structures, 164, 107817.</p></li>
 </ol>
 <p>Code developed by: <a class="reference external" href="https://github.com/dxl9838/">Xinlong Du</a> <a href="#id2"><span class="problematic" id="id3">|dxl|</span></a> (Northeastern University).</p>
-</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, The Regents of the University of California.
-
-    </p>
+    <p>&#169; Copyright 2022, The Regents of the University of California.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2431545-1"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-2431545-1', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-    
+      gtag('config', 'UA-2431545-1', {
+          'anonymize_ip': false,
+      });
+    </script>  
 
   <style>
          .wy-nav-content { max-width: none; }

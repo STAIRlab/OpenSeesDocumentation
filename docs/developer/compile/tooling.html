@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tooling &mdash; OpenSees Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=224b24c6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html">
+            
+              <img src="../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Applications for Users</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user/interpreters.html">1. OpenSees Interpreters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/install.html">2. Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/userManual.html">3. Command Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/userExamples.html">4. Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../user/messageBoard.html">5. Questions, Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">6. Copyright and License</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework for Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../sourceCode.html">1. Source Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build.html">2. Building Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../references.html">3. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../extend.html">4. Extending Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute.html">5. Contributing Code &amp; Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../issues.html">6. Issues</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">OpenSees Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Tooling</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/developer/compile/tooling.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tooling">
+<span id="build-tooling"></span><h1>Tooling<a class="headerlink" href="#tooling" title="Link to this heading"></a></h1>
+<p>This page introduces some basic tools which may be new to users who have
+not worked with C/C++. Users that are already comfortable with a C/C++
+toolchain can skip this page.</p>
+<section id="source-control">
+<span id="build-src"></span><h2>Source Control<a class="headerlink" href="#source-control" title="Link to this heading"></a></h2>
+<p>A source control tool is like Google Documents, but for source code.
+It allows developers to track changes that have been made to
+a project, and easily collaborate by sharing patches.
+Currently, the industry standard tool for this purpose is
+<a class="reference external" href="https://git-scm.com">Git</a>.
+Just like Google drive provides a platform for hosting sharing and collaborating on
+Google documents, <a class="reference external" href="https://github.com">GitHub</a> is a platform
+where developers can host, share and collaborate on software projects.</p>
+<p>The OpenSees project follows a <em>forking</em> workflow for accepting contributions.
+The following resources explain more on this matter.</p>
+<ul class="simple">
+<li><p>For a brief outline on forking we suggest the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">Atlassians forking workflow page</a>.</p></li>
+<li><p>For a brief introduction to using your new FORK we suggest the <a class="reference external" href="https://www.atlassian.com/git/tutorials/saving-changes">Atlassians saving changes</a>.</p></li>
+<li><p>For those interested in programming, you might as well become proficient using git so the link to all of <a class="reference external" href="https://www.atlassian.com/git">Atlassians git tutorial</a> will make help.</p></li>
+</ul>
+</section>
+<section id="compiler-tool-chain">
+<span id="build-chain"></span><h2>Compiler tool-chain<a class="headerlink" href="#compiler-tool-chain" title="Link to this heading"></a></h2>
+<p>A compiler tool-chain is the collection of programs that work together
+to build a final executable program. This includes the actual
+compiler, a linker, and various other utilities.  These programs
+are typically bundled together and installed collectively in a single
+step. Different operating systems generally favor a particular tool-chain, but
+the differences between these can generally be hidden by a <em>build automation</em>
+tool like CMake.</p>
+<p>Building OpenSees requires both a C/C++ and a Fortran compiler. Some suggested
+compilers for various platforms are listed in <a class="reference internal" href="#table-summary">table-summary</a></p>
+</section>
+<section id="package-management">
+<span id="build-pkg"></span><h2>Package management<a class="headerlink" href="#package-management" title="Link to this heading"></a></h2>
+<details><summary><a>APT (Ubuntu, Debian Linux)</a></summary><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dependency</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LAPACK</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">liblapack-dev</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>BLAS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">libblas-dev</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>SuiteSparse</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">suitesparse-dev</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SuperLU</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">superlu-dev</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>MySQL*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">libmysqlclient-dev</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Tcl*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">tcl-dev</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary><a>Pacman (Arch, Manjaro Linux)</a></summary><p>The Pacman package manager</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dependency</p></th>
+<th class="head"><p>Package</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LAPACK</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">lapack</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>BLAS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">blas</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>SuiteSparse</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">suitesparse</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>SuperLU</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">superlu</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>MySQL*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">mariadb</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Tcl*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">tcl</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary><a>Anaconda (Mac, Windows, Linux)</a></summary><table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Dependency</p></th>
+<th class="head"><p>Package</p></th>
+<th class="head"><p>Channel</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>LAPACK</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">lapack</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>BLAS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">blas</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>SuperLU</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">superlu</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>SuiteSparse</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">suitesparse</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>MySQL*</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">mysql</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">conda-forge</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</details></section>
+<section id="command-line-environments">
+<h2>Command line environments<a class="headerlink" href="#command-line-environments" title="Link to this heading"></a></h2>
+<p><strong>This section is under development</strong></p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h2>
+<p>The following table gives a brief rundown of the most common configurations for
+various operating systems.</p>
+<table class="docutils align-default" id="table-summary">
+<tbody>
+<tr class="row-odd"><td colspan="2"><p>Tool</p></td>
+<td><p>Windows</p></td>
+<td><p>MacOS</p></td>
+<td><p>Linux</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>Source control</p></td>
+<td><p>GitHub Desktop</p></td>
+<td><p>GitHub Desktop</p></td>
+<td><p>Git</p></td>
+</tr>
+<tr class="row-odd"><td colspan="2"><p>Build automation <a href="#id3"><span class="problematic" id="id1">[1]_</span></a></p></td>
+<td><p>CMake</p></td>
+<td><p>CMake</p></td>
+<td><p>CMake</p></td>
+</tr>
+<tr class="row-even"><td><p>Compiler</p></td>
+<td><p>C++</p></td>
+<td><p>Visual Studio 2019</p></td>
+<td><p>Clang</p></td>
+<td><p>GCC</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Fortran</p></td>
+<td><p><a class="reference external" href="https://software.intel.com/content/www/us/en/develop/tools/oneapi/hpc-toolkit/download.html">Intel-Fortran</a></p></td>
+<td><p>GFortran</p></td>
+<td><p>GFortran</p></td>
+</tr>
+<tr class="row-even"><td colspan="2"><p>Package management</p></td>
+<td></td>
+<td><p>Homebrew</p></td>
+<td><p><em>system</em> <a href="#id4"><span class="problematic" id="id2">[2]_</span></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, The Regents of the University of California.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2431545-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-2431545-1', {
+          'anonymize_ip': false,
+      });
+    </script>  
+
+  <style>
+         .wy-nav-content { max-width: none; }
+  </style>
+
+
+
+</body>
+</html>

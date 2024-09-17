@@ -1,101 +1,52 @@
-
-
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../../">
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>3.1.5.26. DowelType Timber Joint Material &mdash; OpenSees Documentation  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/sg_gallery.css" type="text/css" />
-  <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=224b24c6" />
 
   
   <!--[if lt IE 9]>
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../../../" src="../../../../_static/documentation_options.js"></script>
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
-        <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
-        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../../../_static/doctools.js"></script>
-        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
-
-    
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="3.1.5.27. CoulombDamper Material" href="CoulombDamper.html" />
     <link rel="prev" title="3.1.5.25. HystereticSmooth Material (Smooth hysteretic material)" href="HystereticSmooth.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../../../../index.html">
           
-
-          
+          <a href="../../../../index.html">
             
-            <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
-          
+              <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Applications for Users</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../../interpreters.html">1. OpenSees Interpreters</a></li>
@@ -149,11 +100,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../ndMaterial.html">3.1.6. nDMaterial Command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../section.html">3.1.7. section Command</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../model/geomTransf.html">3.1.8. Geometric Transformation Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../model/beamIntegration.html">3.1.9. Beam integration Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../model/element.html">3.1.10. Element Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../model/timeSeries.html">3.1.11. Time Series Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../model/pattern.html">3.1.12. Pattern Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../model/damping.html">3.1.13. Damping Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/element.html">3.1.9. Element Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/timeSeries.html">3.1.10. Time Series Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/pattern.html">3.1.11. Pattern Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/damping.html">3.1.12. Damping Commands</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../analysisCommands.html">3.2. Analysis Commands</a></li>
@@ -175,79 +125,35 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../../developer/issues.html">6. Issues</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../../../index.html">OpenSees Documentation</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a> &raquo;</li>
-        
-          <li><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a> &raquo;</li>
-        
-          <li><a href="../uniaxialMaterial.html"><span class="section-number">3.1.5. </span>uniaxialMaterial Command</a> &raquo;</li>
-        
-      <li><span class="section-number">3.1.5.26. </span>DowelType Timber Joint Material</li>
-    
-    
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a></li>
+          <li class="breadcrumb-item"><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a></li>
+          <li class="breadcrumb-item"><a href="../uniaxialMaterial.html"><span class="section-number">3.1.5. </span>uniaxialMaterial Command</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1.5.26. </span>DowelType Timber Joint Material</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../../../../_sources/user/manual/material/uniaxialMaterials/DowelType.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="doweltype-timber-joint-material">
-<span id="doweltype"></span><h1><span class="section-number">3.1.5.26. </span>DowelType Timber Joint Material<a class="headerlink" href="#doweltype-timber-joint-material" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="doweltype-timber-joint-material">
+<span id="doweltype"></span><h1><span class="section-number">3.1.5.26. </span>DowelType Timber Joint Material<a class="headerlink" href="#doweltype-timber-joint-material" title="Link to this heading"></a></h1>
 <p>This command is used to construct a uniaxial force-displacement or moment-rotation model which simulates the hysteresis of a dowel-type timber joint, including nails, screws, and bolts, etc. The model has the following features:</p>
 <ol class="arabic simple">
 <li><p>The envelope can be specified with any of the following models: (1) exponential, (2) cubic Bezier, and (3) piece-wise linear, by providing a flag before the defining parameters.</p></li>
@@ -279,11 +185,11 @@
 <dd></dd></dl>
 
 <p><strong>Universal parameters</strong></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 8%" />
-<col style="width: 8%" />
-<col style="width: 83%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 83.3%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -343,11 +249,11 @@
 </tbody>
 </table>
 <p><strong>Exponential envelope parameters</strong></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 8%" />
-<col style="width: 8%" />
-<col style="width: 83%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 83.3%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -383,11 +289,11 @@
 </tbody>
 </table>
 <p><strong>Bezier envelope parameters</strong></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 8%" />
-<col style="width: 8%" />
-<col style="width: 83%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 83.3%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -431,11 +337,11 @@
 </tbody>
 </table>
 <p><strong>Piecewise envelope parameters</strong></p>
-<table class="colwidths-given docutils align-default">
+<table class="docutils align-default">
 <colgroup>
-<col style="width: 8%" />
-<col style="width: 8%" />
-<col style="width: 83%" />
+<col style="width: 8.3%" />
+<col style="width: 8.3%" />
+<col style="width: 83.3%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Argument</p></th>
@@ -480,9 +386,9 @@ The origin point (0, 0) should not be included in the definition.</p>
 </div>
 <p><strong>Envelope curves</strong></p>
 <p>The envelope curves are illustrated in the following figure. Only the positive part is illustrated.</p>
-<div class="align-center figure">
+<figure class="align-center">
 <img alt="../../../../_images/DowelTypeEnvelope.png" src="../../../../_images/DowelTypeEnvelope.png" />
-</div>
+</figure>
 <p>The expression of the exponential envelope curve is</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}F_{env}(D) = \begin{cases}(F_0+R_1 K_0 D)\left[ 1-\exp\left(\frac{-K_0 D}{F_0}\right) \right], &amp; 0\leq D \leq D_c \\ F_c - K_d (D-D_c), &amp; D_c &lt; D \leq D_u \\ 0, &amp; D &gt; D_u \end{cases}\end{split}\]</div>
@@ -506,9 +412,9 @@ The origin point (0, 0) should not be included in the definition.</p>
 <p>The piecewise envelope connects all the definition points with straight lines. The ultimate displacement is the maximum (minimum for the negative part) displacement defined.</p>
 <p><strong>Hysteretic law</strong></p>
 <p>The hysteretic law is illustrated in the following figure. The hysteresis is independent from the envelope curve. Basically, the hysteretic curves are defined by three guiding lines: unloading line, pinching line, and reloading line. The lines define Bezier curves as shown in the figure.</p>
-<div class="align-center figure">
+<figure class="align-center">
 <img alt="../../../../_images/DowelTypeHyst.png" src="../../../../_images/DowelTypeHyst.png" />
-</div>
+</figure>
 <p>The pinching line passes a defined force intercept, expressed as:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}F_{\mathrm{int}} = \begin{cases} \left(\frac{\left\lvert D_{m,s} \right\rvert}{D_y}\right) F_{I},  &amp; \lvert D_{m,s} \rvert \leq D_y \\ F_{I},  &amp;  \lvert D_{m,s} \rvert &gt; D_y \ \mathrm{and} \ \lvert F_{env}(D_{m,s}) \rvert \leq \lvert F_{env}(D_{y,s}) \rvert  \\ F_{I} - \eta\left(F_{env}(D_{m,s})-F_{env}(D_{y,s})\right), &amp; \lvert D_{m,s} \rvert &gt; D_y \ \mathrm{and} \ \lvert F_{env}(D_{m,s}) \rvert &gt; \lvert F_{env}(D_{y,s}) \rvert \end{cases}\end{split}\]</div>
@@ -523,9 +429,9 @@ The origin point (0, 0) should not be included in the definition.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following figure is used to describe the same side and the opposite side:</p>
-<div class="align-center figure">
+<figure class="align-center">
 <img alt="../../../../_images/DowelTypeSide.jpg" src="../../../../_images/DowelTypeSide.jpg" />
-</div>
+</figure>
 <p>If unloading goes from large displacement to small displacement (i.e., right to left), <span class="math notranslate nohighlight">\(D_{m,s}\)</span> equals <span class="math notranslate nohighlight">\(D_{max}\)</span>, and <span class="math notranslate nohighlight">\(D_{m,o}\)</span> equals <span class="math notranslate nohighlight">\(D_{min}\)</span>. Otherwise, <span class="math notranslate nohighlight">\(D_{m,s}\)</span> equals <span class="math notranslate nohighlight">\(D_{min}\)</span>, and <span class="math notranslate nohighlight">\(D_{m,o}\)</span> equals <span class="math notranslate nohighlight">\(D_{max}\)</span>.</p>
 </div>
 <p>The stiffness of the three guiding lines are defined. In the definitions, degradation models are included. Two kinds of degradation models can be selected by specifying the sign of the related parameters. The stiffnesses are expressed as:</p>
@@ -537,9 +443,9 @@ The origin point (0, 0) should not be included in the definition.</p>
 \[\begin{split}K_{\mathrm{reloading}} = \begin{cases} K_{0,o}, &amp; \alpha_r \geq 0 \ \mathrm{and} \ \lvert D_{m,o}\rvert \leq D_y \\ K_{0,o} \left(\frac{D_y}{\lvert D_{m,o}\rvert}\right)^{\alpha_r}, &amp; \alpha_r \geq 0 \ \mathrm{and} \ \lvert D_{m,o}\rvert &gt; D_y \\ K_{0,o} \left(\frac{F_{env}(D_{m,s})}{D_{m,s}K_{0,s}}\right)^{\lvert\alpha_r\rvert}, &amp; \alpha_r &lt; 0 \end{cases}\end{split}\]</div>
 <p>where <span class="math notranslate nohighlight">\(K_{0,s}\)</span> and <span class="math notranslate nohighlight">\(K_{0,o}\)</span> are the stiffness on the same and opposite side of the unloading point, respectively. <span class="math notranslate nohighlight">\(D_{m,s}\)</span> is the maximum or minimum displacement on the same side of the unloading point. <span class="math notranslate nohighlight">\(D_{m,o}\)</span> is the maximum or minimum displacement on the opposite side of the unloading point.</p>
 <p>There are also a few special scenarios, illustrated in the following figure:</p>
-<div class="align-center figure">
+<figure class="align-center">
 <img alt="../../../../_images/DowelTypeSpecial.png" src="../../../../_images/DowelTypeSpecial.png" />
-</div>
+</figure>
 <p>Special scenario 1 is the smooth transition from the pinching curve to the unloaded envelope curve.</p>
 <p>Special scenario 2 is the case when reloading starts without reaching the pinching line.</p>
 <p>Special scenario 3 is the case when large damage occurs. The hysteretic curve no longer reaches the pinching line.</p>
@@ -560,9 +466,9 @@ The origin point (0, 0) should not be included in the definition.</p>
 </div>
 </div>
 <p>The results of Example 1 is shown in the following figure:</p>
-<div class="align-center figure">
+<figure class="align-center">
 <img alt="../../../../_images/DowelTypeExample1.png" src="../../../../_images/DowelTypeExample1.png" />
-</div>
+</figure>
 <div class="admonition-example-2 admonition">
 <p class="admonition-title">Example 2</p>
 <p>The following command constructs a DowelType hysteretic model with tag <strong>2</strong>.
@@ -582,9 +488,9 @@ This example uses asymmetric Bezier curve as the envelope curve.</p>
 </div>
 </div>
 <p>The results of Example 2 is shown in the following figure:</p>
-<div class="align-center figure">
+<figure class="align-center">
 <img alt="../../../../_images/DowelTypeExample2.png" src="../../../../_images/DowelTypeExample2.png" />
-</div>
+</figure>
 <div class="admonition-example-3 admonition">
 <p class="admonition-title">Example 3</p>
 <p>The following command constructs a DowelType hysteretic model with tag <strong>3</strong>.
@@ -604,9 +510,9 @@ It uses an asymmetric piecewise envelope curve.</p>
 </div>
 </div>
 <p>The results of Example 3 is shown in the following figure:</p>
-<div class="align-center figure">
+<figure class="align-center">
 <img alt="../../../../_images/DowelTypeExample3.png" src="../../../../_images/DowelTypeExample3.png" />
-</div>
+</figure>
 <div class="admonition-example-4 admonition">
 <p class="admonition-title">Example 4</p>
 <p>The following command constructs a DowelType hysteretic model with tag <strong>4</strong>.
@@ -626,72 +532,55 @@ It uses an asymmetric piecewise envelope curve.</p>
 </div>
 </div>
 <p>The results of Example 4 is shown in the following figure:</p>
-<div class="align-center figure">
+<figure class="align-center">
 <img alt="../../../../_images/DowelTypeExample4.png" src="../../../../_images/DowelTypeExample4.png" />
-</div>
+</figure>
 <p>Code Developed by: <a class="reference external" href="http://www.hanlindong.com/en/">Hanlin Dong</a> (<a class="reference external" href="mailto:self&#37;&#52;&#48;hanlindong&#46;com">self<span>&#64;</span>hanlindong<span>&#46;</span>com</a>) and Xijun Wang, Tongji University, China.</p>
-<dl class="citation">
-<dt class="label" id="dongetal2021"><span class="brackets">DongEtAl2021</span></dt>
-<dd><p>Dong, H., He, M., Wang, X.*, Christopoulos, C., Li, Z., Shu, Z. (2021). “Development of a uniaxial hysteretic model for dowel-type timber joints in OpenSees.”, Construction and Building Materials, 288: 123112. <a class="reference external" href="https://doi.org/10.1016/j.conbuildmat.2021.123112">DOI: https://doi.org/10.1016/j.conbuildmat.2021.123112</a></p>
-</dd>
-</dl>
+<div role="list" class="citation-list">
+<div class="citation" id="dongetal2021" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>DongEtAl2021<span class="fn-bracket">]</span></span>
+<p>Dong, H., He, M., Wang, X.*, Christopoulos, C., Li, Z., Shu, Z. (2021). “Development of a uniaxial hysteretic model for dowel-type timber joints in OpenSees.”, Construction and Building Materials, 288: 123112. <a class="reference external" href="https://doi.org/10.1016/j.conbuildmat.2021.123112">DOI: https://doi.org/10.1016/j.conbuildmat.2021.123112</a></p>
 </div>
+</div>
+</section>
 
 
            </div>
-           
           </div>
           <footer>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2022, The Regents of the University of California.
-
-    </p>
+    <p>&#169; Copyright 2022, The Regents of the University of California.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
-
-  
-  
-    
     <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2431545-1"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    ga('create', 'UA-2431545-1', 'auto');
-    
-    ga('send', 'pageview');
-    </script>
-
-    
-    
+      gtag('config', 'UA-2431545-1', {
+          'anonymize_ip': false,
+      });
+    </script>  
 
   <style>
          .wy-nav-content { max-width: none; }
