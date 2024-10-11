@@ -4,9 +4,10 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3.1.5.32. PySimple1 Material &mdash; OpenSees Documentation  documentation</title>
+  <title>3.1.5.39. QbSandCPT Material &mdash; OpenSees Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css?v=a5c4661c" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=224b24c6" />
 
   
@@ -23,8 +24,8 @@
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="3.1.5.33. TzSimple1 Material" href="TzSimple1.html" />
-    <link rel="prev" title="3.1.5.31. Ratchet Material" href="Ratchet.html" /> 
+    <link rel="next" title="3.1.6. nDMaterial Command" href="../ndMaterial.html" />
+    <link rel="prev" title="3.1.5.38. TzSandCPT Material" href="TzSandCPT.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -89,12 +90,14 @@
 <li class="toctree-l4"><a class="reference internal" href="JankowskiImpact.html">3.1.5.29. Jankowski Impact Material</a></li>
 <li class="toctree-l4"><a class="reference internal" href="ViscoelasticGap.html">3.1.5.30. Viscoelastic Gap Material</a></li>
 <li class="toctree-l4"><a class="reference internal" href="Ratchet.html">3.1.5.31. Ratchet Material</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">3.1.5.32. PySimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PySimple1.html">3.1.5.32. PySimple1 Material</a></li>
 <li class="toctree-l4"><a class="reference internal" href="TzSimple1.html">3.1.5.33. TzSimple1 Material</a></li>
 <li class="toctree-l4"><a class="reference internal" href="QzSimple1.html">3.1.5.34. QzSimple1 Material</a></li>
 <li class="toctree-l4"><a class="reference internal" href="PyLiq1.html">3.1.5.35. PyLiq1 Material</a></li>
 <li class="toctree-l4"><a class="reference internal" href="TzLiq1.html">3.1.5.36. TzLiq1 Material</a></li>
 <li class="toctree-l4"><a class="reference internal" href="QzLiq1.html">3.1.5.37. QzLiq1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TzSandCPT.html">3.1.5.38. TzSandCPT Material</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">3.1.5.39. QbSandCPT Material</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../ndMaterial.html">3.1.6. nDMaterial Command</a></li>
@@ -142,9 +145,9 @@
           <li class="breadcrumb-item"><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a></li>
           <li class="breadcrumb-item"><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a></li>
           <li class="breadcrumb-item"><a href="../uniaxialMaterial.html"><span class="section-number">3.1.5. </span>uniaxialMaterial Command</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">3.1.5.32. </span>PySimple1 Material</li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1.5.39. </span>QbSandCPT Material</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../../../_sources/user/manual/material/uniaxialMaterials/PySimple1.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../../_sources/user/manual/material/uniaxialMaterials/QbSandCPT.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -152,12 +155,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="pysimple1-material">
-<span id="pysimple1"></span><h1><span class="section-number">3.1.5.32. </span>PySimple1 Material<a class="headerlink" href="#pysimple1-material" title="Link to this heading"></a></h1>
-<p>This command is used to construct a PySimple1 uniaxial material object:</p>
+  <section id="qbsandcpt-material">
+<span id="qbsandcpt"></span><h1><span class="section-number">3.1.5.39. </span>QbSandCPT Material<a class="headerlink" href="#qbsandcpt-material" title="Link to this heading"></a></h1>
+<p>This command is used to construct a <code class="docutils literal notranslate"><span class="pre">QbSandCPT</span></code> uniaxial material object:</p>
 <dl class="py function">
 <dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">uniaxialMaterial</span> <span class="pre">PySimple1</span> <span class="pre">$matTag</span> <span class="pre">$soilType</span> <span class="pre">$pult</span> <span class="pre">$Y50</span> <span class="pre">$Cd</span> <span class="pre">&lt;$c&gt;</span></span></dt>
+<span class="sig-name descname"><span class="pre">uniaxialMaterial</span> <span class="pre">QbSandCPT</span> <span class="pre">$matTag</span> <span class="pre">$qp</span> <span class="pre">$D</span> <span class="pre">$t</span> <span class="pre">$dcpt</span></span></dt>
 <dd></dd></dl>
 
 <table class="docutils align-default">
@@ -177,80 +180,117 @@
 <td><p><em>integer</em></p></td>
 <td><p>integer tag identifying material</p></td>
 </tr>
-<tr class="row-odd"><td><p>$soilType</p></td>
-<td><p><em>integer</em></p></td>
-<td><p>= 1 for clay; = 2 for sand. see note below.</p></td>
-</tr>
-<tr class="row-even"><td><p>$pult</p></td>
+<tr class="row-odd"><td><p>$qp</p></td>
 <td><p><em>float</em></p></td>
-<td><p>Ultimate capacity of the p-y material.</p></td>
+<td><p>end bearing mobilised at large displacements</p></td>
 </tr>
-<tr class="row-odd"><td><p>$Y50</p></td>
+<tr class="row-even"><td><p>$D</p></td>
 <td><p><em>float</em></p></td>
-<td><p>Displacement at which 50% of pult is mobilized in monotonic loading.</p></td>
+<td><p>pile outer diameter</p></td>
 </tr>
-<tr class="row-even"><td><p>$Cd</p></td>
+<tr class="row-odd"><td><p>$t</p></td>
 <td><p><em>float</em></p></td>
-<td><p>To set the drag resistance within a fully-mobilized gap as Cd*pult.</p></td>
+<td><p>pile wall thickness</p></td>
 </tr>
-<tr class="row-odd"><td><p>$c</p></td>
+<tr class="row-even"><td><p>$dcpt</p></td>
 <td><p><em>float</em></p></td>
-<td><p>The viscous damping term (dashpot). (optional Default = 0.0).</p></td>
+<td><p>diameter of the standard CPT probe (see note)</p></td>
 </tr>
 </tbody>
 </table>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>$soilType = 1 Backbone of p-y curve approximates Matlock (1970) soft clay relation.</p>
-<p>soilType = 2 Backbone of p-y curve approximates API (1993) sand relation.</p>
-<p>The “p” or “pult” are distributed loads [force per length of pile] in common design equations, but are both loads for this uniaxialMaterial [i.e., distributed load times the tributary length of the pile].</p>
-<p>The viscous damping term (dashpot) on the far-field (elastic) component of the displacement rate (velocity). Nonzero $c values are used to represent radiation damping effects. See theory below.</p>
-<p>In general the <a class="reference internal" href="../../analysis/integrator/HHT.html#hilberhughestaylormethod"><span class="std std-ref">Hilber-Hughes-Taylor Method</span></a> algorithm is preferred over a <a class="reference internal" href="../../analysis/integrator/Newmark.html#newmark"><span class="std std-ref">Newmark Method</span></a> algorithm when using this material. This is due to the numerical oscillations that can develop with viscous damping forces under transient loading with certain solution algorithms and damping ratios.</p>
+<p>The nominal value of the diameter of the standard CPT probe is 35.7mm.</p>
 </div>
-<p>The equations describing PySimple1 behavior are described in <a class="reference internal" href="TzSimple1.html#boulangeretal1999" id="id1"><span>[BoulangerEtAl1999]</span></a>. Only minor changes have been made in its implementation for OpenSees.</p>
-<p>The nonlinear <span class="math notranslate nohighlight">\(p-y\)</span> behavior is conceptualized as consisting of elastic (<span class="math notranslate nohighlight">\(p-y^e\)</span>), plastic (<span class="math notranslate nohighlight">\(p-y^p\)</span>), and gap <span class="math notranslate nohighlight">\((p-y^g)\)</span> components in series. Radiation damping is modeled by a dashpot on the “far-field” elastic component <span class="math notranslate nohighlight">\((p-y^e)\)</span> of the displacement rate. The gap component consists of a nonlinear closure spring (<span class="math notranslate nohighlight">\(p^c-y^g\)</span>) in parallel with a nonlinear drag spring <span class="math notranslate nohighlight">\((p^d-y^g)\)</span>. Note that <span class="math notranslate nohighlight">\(y = y^e + y^p + y^g\)</span>, and that <span class="math notranslate nohighlight">\(p = p^d + p^c\)</span>.</p>
-<p>The plastic component has an initial range of rigid behavior between <span class="math notranslate nohighlight">\(-C_r p_{ult} &lt; p &lt; C_r p_{ult}\)</span> with <span class="math notranslate nohighlight">\(C_r\)</span> = the ratio of <span class="math notranslate nohighlight">\(p/p_{ult} ` when plastic yielding first occurs in virgin loading. The rigid range of :math:`p\)</span>, which is initially <span class="math notranslate nohighlight">\(2 C_r p_{ult}\)</span>, translates with plastic yielding (kinematic hardening). The rigid range of <span class="math notranslate nohighlight">\(p\)</span> can be constrained to maintain a minimum size on both the positive and negative loading sides (e.g., 25% of <span class="math notranslate nohighlight">\(p{ult}\)</span>), and this is accomplished by allowing the rigid range to expand or contract as necessary. Beyond the rigid range, loading of the plastic <span class="math notranslate nohighlight">\((p-y^p)\)</span> component is described by:</p>
+<section id="description">
+<h2><span class="section-number">3.1.5.39.1. </span>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">QbSandCPT</span></code> function implements the base-load transfer function, commonly referred to as
+the <span class="math notranslate nohighlight">\(q_z\)</span> curve or spring, according to the new Unified CPT-based method for driven piles in
+sands.</p>
+<section id="end-bearing-capacity">
+<h3>End bearing capacity<a class="headerlink" href="#end-bearing-capacity" title="Link to this heading"></a></h3>
+<p>The material calculates the base or end bearing capacity according to the formulation given
+in <a class="reference internal" href="TzSandCPT.html#lehaneetal2020a" id="id1"><span>[LehaneEtAl2020a]</span></a>.  The expression for the base capacity is given by Eq. <a class="reference internal" href="#equation-eq-7">(3.1.5.10)</a>.</p>
+<div class="math notranslate nohighlight" id="equation-eq-7">
+<span class="eqno">(3.1.5.10)<a class="headerlink" href="#equation-eq-7" title="Link to this equation"></a></span>\[\mathrm{Q}_{\text{base}}= \mathrm{q}_{\mathrm{b} 0.1} \left(\pi \mathrm{D}^2 / 4\right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(\mathrm{q}_{\mathrm{b} 0.1}\)</span> is the ultimate unit base resistance mobilized at a
+settlement of 10% of the pile diameter, given by Eq. <a class="reference internal" href="#equation-eq-8">(3.1.5.11)</a>.</p>
+<div class="math notranslate nohighlight" id="equation-eq-8">
+<span class="eqno">(3.1.5.11)<a class="headerlink" href="#equation-eq-8" title="Link to this equation"></a></span>\[\mathrm{q}_{\mathrm{b}0.1}=\left[0.12+0.38 \mathrm{~A}_{\mathrm{re}}\right] \mathrm{q}_{\mathrm{p}}\]</div>
+<p>The parameter <span class="math notranslate nohighlight">\(\mathrm{q}_{\mathrm{p}}\)</span> represents the mobilised end bearing at large
+displacements by a pile  at the  level of the pile base by a pile with a ficticious diameter of
+<span class="math notranslate nohighlight">\(D_{eq}=A_{re}^{0.5}\)</span>. Several techniques can be employed for estimate <span class="math notranslate nohighlight">\(\mathrm{q}_{\mathrm{p}}\)</span>.
+In sands that are relatively homogeneous, one can consider <span class="math notranslate nohighlight">\(\mathrm{q}_{\mathrm{p}}\)</span> to be
+the average value of cone resitance  within a zone 1.5D above and below the pile base.
+In more heterogeneous locations, the approaches discussed in <a class="reference internal" href="TzSandCPT.html#lehaneetal2020a" id="id2"><span>[LehaneEtAl2020a]</span></a> may be employed.</p>
+</section>
+<section id="load-transfer-function">
+<h3>Load-transfer function<a class="headerlink" href="#load-transfer-function" title="Link to this heading"></a></h3>
+<p>The non-linear end bearing-displacement response obeys the hyperbolic function as defined by
+<a class="reference internal" href="TzSandCPT.html#lehanelibittar2020b" id="id3"><span>[LehaneLiBittar2020b]</span></a>. Unit end bearing, <span class="math notranslate nohighlight">\(\mathrm{q}_{\mathrm{b}}\)</span>, is assumed to be fully
+mobilized at a pile base displacement value of 0.1D in APIrp2GEO standard (2011). This criterion
+was also maintained in the unified method. The proposed expression to represent the variation of
+pile base load with base displacement follows a hyperbolic function of the form:</p>
 <div class="math notranslate nohighlight">
-\[p = p_{{ult}} - (p_{{ult}} - p_o) \left [\frac{c y_{50}}{c y_{50} + | z_p - z^p_0|} \right ]^n\]</div>
-<p>where <span class="math notranslate nohighlight">\(p_{ult}\)</span> = the ultimate resistance of the <span class="math notranslate nohighlight">\(p-y\)</span> material in the current loading direction, <span class="math notranslate nohighlight">\(p_o = p\)</span> at the start of the current plastic loading cycle, <span class="math notranslate nohighlight">\(y^p_o = y_p\)</span> at the start of the current plastic loading cycle, <span class="math notranslate nohighlight">\(c\)</span> = constant to control the tangent modulus at the start of plastic yielding, and n = an exponent to control sharpness of the <span class="math notranslate nohighlight">\(p-y^p\)</span> curve.</p>
-<p>The closure <span class="math notranslate nohighlight">\((p^c-y^g)\)</span> spring is described by:</p>
-<p><span class="math notranslate nohighlight">\(p^c = 1.8 p_{{ult}} \left [\frac{y_{50}}{y_{50} + 50(y_o^{+} - y^g)} - \frac{y_{50}}{y_{50} + 50(y_o^{-} - y^g)} \right ] `
-where :math:`y_o^+\)</span> = memory term for the positive side of the gap, <span class="math notranslate nohighlight">\(y_o^-`= memory term for the negative side of the gap. The initial values of :math:`y_o^+\)</span> and <span class="math notranslate nohighlight">\(y_o^-\)</span> were set as <span class="math notranslate nohighlight">\(y_{50}/100\)</span> and <span class="math notranslate nohighlight">\(- y_{50}/100\)</span>, respectively. The factor of 1.8 brings <span class="math notranslate nohighlight">\(p^c\)</span> up to <span class="math notranslate nohighlight">\(p_{ult}\)</span> during virgin loading to <span class="math notranslate nohighlight">\(y_o^+\)</span> (or <span class="math notranslate nohighlight">\(y_o^-\)</span>). Gap enlargement follows logic similar to that of Matlock et al. (1978). The gap grows on the positive side when the plastic deformation occurs on the negative loading side. Consequently, the <span class="math notranslate nohighlight">\(y_o^+\)</span> value equals the opposite value of the largest past negative value of, <span class="math notranslate nohighlight">\(y^p + y^g + 1.5 y_{50}\)</span> where the <span class="math notranslate nohighlight">\(1.5y_{50}\)</span> represents some rebounding of the gap. Similarly, the <span class="math notranslate nohighlight">\(y_o^-\)</span> value equals the opposite value of the largest past positive value of <span class="math notranslate nohighlight">\(y^p+y^g-1.5y_{50}\)</span>. This closure spring allows for a smooth transition in the load displacement behavior as the gap opens or closes.</p>
-<p>The nonlinear drag <span class="math notranslate nohighlight">\((p^d-y^g)\)</span> spring is described by:</p>
-<div class="math notranslate nohighlight">
-\[p^d = C_d p_{{ult}} - (C_d p_{{ult}} - p^d_o) \left [\frac{y_{50}}{y_{50} + 2| y^g - y^g_o|} \right ]^n\]</div>
-<p>where <span class="math notranslate nohighlight">\(C_d =\)</span> ratio of the maximum drag force to the ultimate resistance of the p-y material, <span class="math notranslate nohighlight">\(d^p_o =p^d\)</span> at the start of the current loading cycle, and <span class="math notranslate nohighlight">\(y^g_o = y^g\)</span> at the start of the current loading cycle.</p>
-<p>The flexibility of the above equations can be used to approximate different p-y backbone relations. Matlock’s (1970) recommended backbone for soft clay is closely approximated using <span class="math notranslate nohighlight">\(c = 10\)</span>, <span class="math notranslate nohighlight">\(n = 5\)</span>, and <span class="math notranslate nohighlight">\(C_r = 0.35\)</span>. API’s (1993) recommended backbone for drained sand is closely approximated using <span class="math notranslate nohighlight">\(c = 0.5\)</span>, <span class="math notranslate nohighlight">\(n = 2\)</span>, and <span class="math notranslate nohighlight">\(C_r = 0.2\)</span>. PySimple1 is currently implemented to allow use of these two default sets of values. Values of <span class="math notranslate nohighlight">\(p_{ult}\)</span>, <span class="math notranslate nohighlight">\(y_{50}\)</span>, and <span class="math notranslate nohighlight">\(C_d\)</span> must then be specified to define the <span class="math notranslate nohighlight">\(p-y\)</span> material behavior.</p>
-<p>Viscous damping on the far-field (elastic) component of the p-y material is included for approximating radiation damping. For implementation in OpenSees the viscous damper is placed across the entire material, but the viscous force is calculated as proportional to the component of velocity (or displacement) that developed in the far-field elastic component of the material. For example, this correctly causes the damper force to become zero during load increments across a fully formed gap. In addition, the total force across the p-y material is restricted to pult in magnitude so that the viscous damper cannot cause the total force to exceed the near-field soil capacity. Users should also be familiar with numerical oscillations that can develop in viscous damper forces under transient loading with certain solution algorithms and damping ratios. In general, an HHT algorithm is preferred over a Newmark algorithm for reducing such oscillations in materials like PySimple1.</p>
+\[\frac{z_{\mathrm{b}}}{D}=0.01\left[\frac{q_{\mathrm{b}} / q_{\mathrm{b} 0.1}}{1-0.9\left(q_{\mathrm{b}} / q_{\mathrm{b}0.1}\right)}\right]\]</div>
+<p>with <span class="math notranslate nohighlight">\(z_{\mathrm{b}}\)</span> as the pile base displacement and <span class="math notranslate nohighlight">\(\mathrm{q}_{\mathrm{b}0.1}\)</span>
+calculated as indicated in Eq. <a class="reference internal" href="#equation-eq-8">(3.1.5.11)</a>.</p>
+</section>
+</section>
+<section id="example">
+<h2><span class="section-number">3.1.5.39.2. </span>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h2>
+<p>Below, examples are provided on how to use this material. The input data assumed is based on a typical
+sand site in the Gulf of Mexico (referred to as <em>Site A</em> in <a class="reference internal" href="TzSandCPT.html#lehaneetal2005" id="id4"><span>[LehaneEtAl2005]</span></a>). The simulated
+end bearing behavior for this example is shown in the following figure. As expected, for tension
+loading there is no end bearing.</p>
 <figure class="align-center">
-<img alt="../../../../_images/PySimple1A.gif" src="../../../../_images/PySimple1A.gif" />
+<img alt="../../../../_images/qbsandcpt.png" src="../../../../_images/qbsandcpt.png" />
 </figure>
-<figure class="align-center">
-<img alt="../../../../_images/PySimple1B.gif" src="../../../../_images/PySimple1B.gif" />
-</figure>
-<div class="admonition-example admonition">
-<p class="admonition-title">Example</p>
-<p>The following constructs a PySimple material with tag <strong>1</strong>, soil type <strong>2</strong> (sand), <span class="math notranslate nohighlight">\(p_{ult}\)</span> of <strong>4577.81</strong> and a <span class="math notranslate nohighlight">\(Y_{50}\)</span> of <strong>0.0066</strong>. Cd is set to <strong>0.0</strong> for zero damping.</p>
+<p>The simulated end-bearing response by the material is shown in the left plot. Users can verify
+that the internally computed ultimate unit base resistance mobilized at a
+settlement of 10% of the pile diameter (<span class="math notranslate nohighlight">\(q_{b 0.1}\)</span>) is 7.629MN, which corresponds to the
+value computed using the <a class="reference external" href="https://pile-capacity-uwa.com">UWA calculator</a>.</p>
+<p>The right plot compares the normalized form of the simulated <code class="docutils literal notranslate"><span class="pre">QbSandCPT</span></code> response against the
+load-transfer curve recommended in API (2011). This comparison lead to the same conclusions in
+<a class="reference internal" href="TzSandCPT.html#lehanelibittar2020b" id="id5"><span>[LehaneLiBittar2020b]</span></a>. The proposed back-bone curve mathes relatively well the API (2011)
+recommendations for <span class="math notranslate nohighlight">\(q_{b}/q_{b 0.1}\)</span> ratios lower than 0.4. For greater ratios, the unified
+CPT-based end bearing curve is stiffer than API formulae.</p>
+<div class="admonition-example-using-default-unit-system admonition">
+<p class="admonition-title">Example using default unit system</p>
+<p>The following constructs a QbSandCPT material with a tag of <strong>1</strong>, <span class="math notranslate nohighlight">\(q_p\)</span> of <strong>50000 kPa</strong>, <span class="math notranslate nohighlight">\(D\)</span> of <strong>2.44 m</strong>, <span class="math notranslate nohighlight">\(t\)</span> of <strong>0.0445 m</strong> and <span class="math notranslate nohighlight">\(d_{CPT}\)</span> of <strong>35.7 mm</strong>.</p>
 <ol class="arabic simple">
 <li><p><strong>Tcl Code</strong></p></li>
 </ol>
-<div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="nv">uniaxialMaterial</span><span class="w"> </span>PySimple1<span class="w"> </span><span class="mi">1</span><span class="w">  </span><span class="mi">2</span><span class="w">  </span><span class="mf">4577.81</span><span class="w">  </span><span class="mf">0.0066</span><span class="w"> </span><span class="mf">0.0</span>
+<div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="nv">uniaxialMaterial</span><span class="w"> </span>QbSandCPT<span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">50000</span>.<span class="w"> </span><span class="mf">2.44</span><span class="w"> </span><span class="mf">0.0445</span><span class="w"> </span><span class="mf">35.7</span>e-3
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p><strong>Python Code</strong></p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">uniaxialMaterial</span><span class="p">(</span><span class="s1">&#39;PySimple1&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">4577.81</span><span class="p">,</span> <span class="mf">0.0066</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">uniaxialMaterial</span><span class="p">(</span><span class="s1">&#39;QbSandCPT&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">50000.</span> <span class="mf">2.44</span><span class="p">,</span> <span class="mf">0.0445</span><span class="p">,</span> <span class="mf">35.7e-3</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<p>Code Developed by: <a class="reference external" href="https://faculty.engineering.ucdavis.edu/boulanger/">Ross Boulanger</a>, UC Davis</p>
+<p>More details on the implementation, validation and benchmark of the <code class="docutils literal notranslate"><span class="pre">TzSandCPT</span></code> material are published
+in a <a class="reference external" href="https://www.scipedia.com/public/Sastre_Jurado_Stuyts*_2024a">conference paper in the ISC’7 Proceedings</a>.</p>
+<p>Code Developed by: <strong>csasj</strong></p>
 <div role="list" class="citation-list">
-<div class="citation" id="boulangeretal1999" role="doc-biblioentry">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">BoulangerEtAl1999</a><span class="fn-bracket">]</span></span>
-<p>Boulanger, R. W., Curras, C. J., Kutter, B. L., Wilson, D. W., and Abghari, A. (1999). “Seismic soil-pile-structure interaction experiments and analyses.” Journal of Geotechnical and Geoenvironmental Engineering, ASCE, 125(9): 750-759. Only minor changes have been made in its implementation for OpenSees.</p>
+<div class="citation" id="lehaneetal2005" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">LehaneEtAl2005</a><span class="fn-bracket">]</span></span>
+<p>Lehane, B. M., Schneider, J. A. A., &amp; Xu, X. (2005). A review of design methods for offshore driven piles in siliceous sand.</p>
+</div>
+<div class="citation" id="lehaneetal2020a" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>LehaneEtAl2020a<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>)</span>
+<p>Lehane, B. M., Liu, Z., Bittar, E., Nadim, F., Lacasse, S., Jardine, R., Carotenuto, P., Rattley, M., Gavin, K., &amp; More Authors (2020). A New ‘Unified’ CPT-Based Axial Pile Capacity Design Method for Driven Piles in Sand. In Z. Westgate (Ed.), Proceedings Fourth International Symposium on Frontiers in Offshore Geotechnics (pp. 462-477). Article 3457</p>
+</div>
+<div class="citation" id="lehanelibittar2020b" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>LehaneLiBittar2020b<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id3">1</a>,<a role="doc-backlink" href="#id5">2</a>)</span>
+<p>Lehane, B. M., Li, L., &amp; Bittar, E. J. (2020). Cone penetration test-based load-transfer formulations for driven piles in sand. Geotechnique Letters, 10(4), 568-574.</p>
 </div>
 </div>
+</section>
 </section>
 
 

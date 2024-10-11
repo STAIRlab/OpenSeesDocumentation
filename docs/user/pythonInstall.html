@@ -100,11 +100,12 @@
              
   <section id="python-install">
 <h1><span class="section-number">2.2. </span>Python Install<a class="headerlink" href="#python-install" title="Link to this heading"></a></h1>
-<p>There are two different Python packages that can be used to use OpenSees from Python:</p>
+<p>There are two packages that can be used to install OpenSees from Python:</p>
 <ol class="arabic simple">
-<li><p><a class="reference external" href="https://pypi.org/project/openseespy">openseespy</a> is a Python package developed at Oregon State University which provides Python bindings that are designed to feel like Tcl.</p></li>
-<li><p><a class="reference external" href="https://pypi.org/project/opensees">opensees</a> is a Python package developed at UC Berkeley which leverages the new OpenSeesRT interpreter architecture to provide both a Tcl interpreter and natural Python interpreter simultaneously.</p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/openseespy">openseespy</a> is a Python package developed by Dr. Zhu and Prof. Scott at Oregon State University which provides Python bindings that are designed to feel like Tcl.</p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/sees">sees</a> is a Python package developed by a team of researchers at UC Berkeley which exposes the new OpenSeesRT interpreter architecture to provide both a Tcl interpreter and natural Python interpreter simultaneously.</p></li>
 </ol>
+<p>Both packages are actively developed through the central <a class="reference external" href="https://github.com/OpenSees/OpenSees">OpenSees GitHub repository</a>.</p>
 <p>Once <a class="reference external" href="https://python.org">Python</a> is installed, both packages can be installed using <code class="docutils literal notranslate"><span class="pre">pip</span></code> on Windows, Mac, or a Linux operating system.</p>
 <section id="id1">
 <h2><span class="section-number">2.2.1. </span>OpenSeesPy<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
@@ -139,20 +140,20 @@
 <ul>
 <li><p>To install</p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">opensees</span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">sees</span>
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>To upgrade</p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">opensees</span>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">sees</span>
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 <li><p>To import</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">opensees.openseesrt</span> <span class="k">as</span> <span class="nn">ops</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sees.openseespy</span> <span class="k">as</span> <span class="nn">ops</span>
 </pre></div>
 </div>
 </li>

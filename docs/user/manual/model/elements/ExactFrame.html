@@ -7,7 +7,6 @@
   <title>3.1.9.6. Geometrically Exact Frame Element &mdash; OpenSees Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css?v=a5c4661c" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=224b24c6" />
 
   
@@ -20,7 +19,6 @@
         <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
         <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
         <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script src="../../../../_static/tabs.js?v=3030b3cb"></script>
     <script src="../../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
@@ -158,50 +156,6 @@
 <p>This command is used to construct an <strong>ExactFrame</strong> element, which is suitable
 for modeling flexural, flexural-torsionl and torsional buckling of members with
 asymmetric section such as angles and tees.</p>
-<div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Tcl</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Python (RT)</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><dl class="py function">
-<dt class="sig sig-object py">
-<span class="sig-name descname"><span class="pre">element</span> <span class="pre">ExactFrame</span> <span class="pre">$tag</span> <span class="pre">$iNode</span> <span class="pre">$jNode</span> <span class="pre">$sec</span> <span class="pre">$transfTag</span></span></dt>
-<dd></dd></dl>
-
-<p>The required arguments are:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 16.7%" />
-<col style="width: 16.7%" />
-<col style="width: 66.7%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Argument</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>$tag</p></td>
-<td><p><em>integer</em></p></td>
-<td><p>unique element object tag</p></td>
-</tr>
-<tr class="row-odd"><td><p>$iNode  $jNode</p></td>
-<td><p><em>integer</em></p></td>
-<td><p>end nodes</p></td>
-</tr>
-<tr class="row-even"><td><p>$secTag</p></td>
-<td><p><em>integer</em></p></td>
-<td><p>section tag</p></td>
-</tr>
-<tr class="row-odd"><td><p>$transfTag</p></td>
-<td><p><em>integer</em></p></td>
-<td><p>identifier for previously-defined coordinate-transformation (CrdTransf)</p></td>
-</tr>
-</tbody>
-</table>
-</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><dl class="py function">
-<dt class="sig sig-object py" id="element">
-<span class="sig-name descname"><span class="pre">element</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">&quot;ExactFrame&quot;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jNode</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">transfTag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integrTag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#element" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-</div></div>
 <p><strong>TCL ELEMENT COMMAND</strong></p>
 <p>The optional arguments are:</p>
 <table class="docutils align-default">

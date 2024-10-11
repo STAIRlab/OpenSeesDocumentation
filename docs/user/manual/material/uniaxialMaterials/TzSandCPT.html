@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1.5.38. TzSandCPT Material &mdash; OpenSees Documentation  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css?v=a5c4661c" />
+      <link rel="stylesheet" type="text/css" href="../../../../_static/css/custom.css?v=224b24c6" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="3.1.5.39. QbSandCPT Material" href="QbSandCPT.html" />
+    <link rel="prev" title="3.1.5.37. QzLiq1 Material" href="QzLiq1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../../index.html">
+            
+              <img src="../../../../_static/OpenSeesLogo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Applications for Users</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../interpreters.html">1. OpenSees Interpreters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../install.html">2. Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../userManual.html">3. Command Manual</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../../modelCommands.html">3.1. Model Commands</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../model/model.html">3.1.1. model Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/node.html">3.1.2. node Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/spConstraints.html">3.1.3. SP_Constraint Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/mpConstraints.html">3.1.4. MP_Constraint Commands</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../uniaxialMaterial.html">3.1.5. uniaxialMaterial Command</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="Steel01.html">3.1.5.1. Steel01 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Steel02.html">3.1.5.2. Steel02 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Steel4.html">3.1.5.3. Steel4 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ReinforcingSteel.html">3.1.5.4. Reinforcing Steel Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="DoddRestrepo.html">3.1.5.5. DoddRestrepo Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="RambergOsgoodSteel.html">3.1.5.6. Ramberg Osgood Steel Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SteelMPF.html">3.1.5.7. SteelMPF Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="UVCuniaxial.html">3.1.5.8. UVCUniaxial Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SteelFractureDI.html">3.1.5.9. SteelFractureDI Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="DuctileFracture.html">3.1.5.10. DuctileFracture Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Concrete01.html">3.1.5.11. Concrete01 Material – Zero Tensile Strength</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Concrete02.html">3.1.5.12. Concrete02 Material – Linear Tension Softening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Concrete04.html">3.1.5.13. Concrete04 Material – Popovics Concrete Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ASDConcrete1D.html">3.1.5.14. ASDConcrete1D Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GMG_CyclicReinforcedConcrete.html">3.1.5.15. GMG_CyclicReinforcedConcrete Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Hysteretic.html">3.1.5.16. Hysteretic Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="HystereticSM.html">3.1.5.17. HystereticSM Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="IMKBilin.html">3.1.5.18. IMKBilin Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="IMKPeakOriented.html">3.1.5.19. IMKPeakOriented Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="IMKPinching.html">3.1.5.20. IMKPinching Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="SLModel.html">3.1.5.21. SLModel Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="BoucWenInfill.html">3.1.5.22. BoucWenInfill Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="HystereticPoly.html">3.1.5.23. HystereticPoly Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="HystereticAsym.html">3.1.5.24. HystereticAsym Material (Smooth asymmetric hysteresis)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="HystereticSmooth.html">3.1.5.25. HystereticSmooth Material (Smooth hysteretic material)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="DowelType.html">3.1.5.26. DowelType Timber Joint Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="CoulombDamper.html">3.1.5.27. CoulombDamper Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="HertzDamp.html">3.1.5.28. Hertz Damp Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="JankowskiImpact.html">3.1.5.29. Jankowski Impact Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ViscoelasticGap.html">3.1.5.30. Viscoelastic Gap Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Ratchet.html">3.1.5.31. Ratchet Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PySimple1.html">3.1.5.32. PySimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TzSimple1.html">3.1.5.33. TzSimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="QzSimple1.html">3.1.5.34. QzSimple1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="PyLiq1.html">3.1.5.35. PyLiq1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="TzLiq1.html">3.1.5.36. TzLiq1 Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="QzLiq1.html">3.1.5.37. QzLiq1 Material</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">3.1.5.38. TzSandCPT Material</a></li>
+<li class="toctree-l4"><a class="reference internal" href="QbSandCPT.html">3.1.5.39. QbSandCPT Material</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ndMaterial.html">3.1.6. nDMaterial Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../section.html">3.1.7. section Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/geomTransf.html">3.1.8. Geometric Transformation Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/element.html">3.1.9. Element Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/timeSeries.html">3.1.10. Time Series Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/pattern.html">3.1.11. Pattern Command</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../model/damping.html">3.1.12. Damping Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../analysisCommands.html">3.2. Analysis Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../outputCommands.html">3.3. Output Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../miscCommands.html">3.4. Misc. Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../userExamples.html">4. Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../messageBoard.html">5. Questions, Bugs &amp; Feature Requests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/license.html">6. Copyright and License</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework for Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/sourceCode.html">1. Source Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/build.html">2. Building Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/references.html">3. References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/extend.html">4. Extending Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/contribute.html">5. Contributing Code &amp; Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer/issues.html">6. Issues</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">OpenSees Documentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../userManual.html"><span class="section-number">3. </span>Command Manual</a></li>
+          <li class="breadcrumb-item"><a href="../../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a></li>
+          <li class="breadcrumb-item"><a href="../uniaxialMaterial.html"><span class="section-number">3.1.5. </span>uniaxialMaterial Command</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1.5.38. </span>TzSandCPT Material</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/user/manual/material/uniaxialMaterials/TzSandCPT.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="tzsandcpt-material">
+<span id="tzsandcpt"></span><h1><span class="section-number">3.1.5.38. </span>TzSandCPT Material<a class="headerlink" href="#tzsandcpt-material" title="Link to this heading"></a></h1>
+<p>This command is used to construct a <code class="docutils literal notranslate"><span class="pre">TzSandCPT</span></code> uniaxial material object:</p>
+<dl class="py function">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">uniaxialMaterial</span> <span class="pre">TzSandCPT</span> <span class="pre">$matTag</span> <span class="pre">$qc</span> <span class="pre">$Sv_eff</span> <span class="pre">$D</span> <span class="pre">$t</span> <span class="pre">$h</span> <span class="pre">$dz</span> <span class="pre">$dcpt</span> <span class="pre">$pa</span> <span class="pre">&lt;$delta_f&gt;</span></span></dt>
+<dd></dd></dl>
+
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16.7%" />
+<col style="width: 16.7%" />
+<col style="width: 66.7%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Argument</p></th>
+<th class="head"><p>Type</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>$matTag</p></td>
+<td><p><em>integer</em></p></td>
+<td><p>integer tag identifying material</p></td>
+</tr>
+<tr class="row-odd"><td><p>$qc</p></td>
+<td><p><em>float</em></p></td>
+<td><p>cone resistance</p></td>
+</tr>
+<tr class="row-even"><td><p>$Sv_eff</p></td>
+<td><p><em>float</em></p></td>
+<td><p>vertical effective soil stress</p></td>
+</tr>
+<tr class="row-odd"><td><p>$D</p></td>
+<td><p><em>float</em></p></td>
+<td><p>pile outer diameter</p></td>
+</tr>
+<tr class="row-even"><td><p>$t</p></td>
+<td><p><em>float</em></p></td>
+<td><p>pile wall thickness</p></td>
+</tr>
+<tr class="row-odd"><td><p>$h</p></td>
+<td><p><em>float</em></p></td>
+<td><p>distance to the pile tip</p></td>
+</tr>
+<tr class="row-even"><td><p>$dz</p></td>
+<td><p><em>float</em></p></td>
+<td><p>local pile height</p></td>
+</tr>
+<tr class="row-odd"><td><p>$dcpt</p></td>
+<td><p><em>float</em></p></td>
+<td><p>diameter of the standard CPT probe (see note)</p></td>
+</tr>
+<tr class="row-even"><td><p>$pa</p></td>
+<td><p><em>float</em></p></td>
+<td><p>atmospheric pressure (see note)</p></td>
+</tr>
+<tr class="row-odd"><td><p>$delta_f</p></td>
+<td><p><em>float</em></p></td>
+<td><p>ultimate interface friction angle (optional with default value of: 29.0)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The nominal value of the diameter of the standard CPT probe is 35.7mm. For the atmospheric
+pressure a value of 100 kPa or equivalent may be retained.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the ultimate sand-pile interface friction angle, in the absence of site-specific measurements,
+the recommended value of 29 <span class="math notranslate nohighlight">\(^\circ\)</span> is assummed as suggested in the litterature.</p>
+</div>
+<section id="description">
+<h2><span class="section-number">3.1.5.38.1. </span>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">TzSandCPT</span></code> function implements the shaft-load transfer function, commonly referred to as
+the <span class="math notranslate nohighlight">\(t_z\)</span> curve or spring, according to the <em>new Unified CPT-based method</em> for driven piles
+in sands.</p>
+<section id="shaft-capacity">
+<h3>Shaft capacity<a class="headerlink" href="#shaft-capacity" title="Link to this heading"></a></h3>
+<p>The material calculates the maximum shaft or skin friction according to the formulations as
+given in <a class="reference internal" href="#lehaneetal2020a" id="id1"><span>[LehaneEtAl2020a]</span></a>. The shaft capacity is given by Eq. <a class="reference internal" href="#equation-eq-1">(3.1.5.1)</a>, being <span class="math notranslate nohighlight">\(\tau_f\)</span> the local ultimate shaft friction, <span class="math notranslate nohighlight">\(\mathrm{D}\)</span> the pile diameter, and <span class="math notranslate nohighlight">\(L\)</span> the embedded pile length.</p>
+<div class="math notranslate nohighlight" id="equation-eq-1">
+<span class="eqno">(3.1.5.1)<a class="headerlink" href="#equation-eq-1" title="Link to this equation"></a></span>\[\mathrm{Q}_{\text{shaft}}=\pi \mathrm{D} \int_0^L \tau_f \ dz\]</div>
+<p>A Coulomb’s law is assumed to estimate <span class="math notranslate nohighlight">\(\tau_f\)</span> as follows:</p>
+<div class="math notranslate nohighlight" id="equation-eq-2">
+<span class="eqno">(3.1.5.2)<a class="headerlink" href="#equation-eq-2" title="Link to this equation"></a></span>\[\tau_f = \left(\frac{f_t}{f_c}\right) \left(\sigma'_{rc} + \Delta \sigma'_{rd}\right) \tan \delta_f\]</div>
+<p>where <span class="math notranslate nohighlight">\(\sigma'_{rc}\)</span> is the (stationary) radial effective stress, <span class="math notranslate nohighlight">\(\Delta \sigma'_{rd}\)</span> is the increase in radial effective stress that occurs during pile loading. The term <span class="math notranslate nohighlight">\(\delta_f\)</span> stands for the ultimate sand-pile interface friction angle, in the absence of site-specific measurements, a constant value of <span class="math notranslate nohighlight">\(29^\circ\)</span> is recommended. The coefficient <span class="math notranslate nohighlight">\(\frac{f_t}{f_c}\)</span> becomes 1 for compression loading and 0.75 for tension loading.</p>
+<p>The term <span class="math notranslate nohighlight">\(\sigma'_{rc}\)</span> is calculated according to Eq. <a class="reference internal" href="#equation-eq-3">(3.1.5.3)</a>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-3">
+<span class="eqno">(3.1.5.3)<a class="headerlink" href="#equation-eq-3" title="Link to this equation"></a></span>\[\sigma_{r c}^{\prime}=\left(\frac{q_c}{44}\right) A_{re}^{0.3}[\operatorname{Max}[1,(h / D)]]^{-0.4}\]</div>
+<p>where <span class="math notranslate nohighlight">\(d_{CPT}=35.7\)</span> mm, <span class="math notranslate nohighlight">\(h\)</span> refers to the distance from the pile tip to a given soil depth, and <span class="math notranslate nohighlight">\(A_{re}\)</span> represents the effective area ratio which is given in Eq. <a class="reference internal" href="#equation-eq-4">(3.1.5.4)</a>. Note that for a closed-ended pile <span class="math notranslate nohighlight">\(A_{re}\)</span> becomes 1.</p>
+<div class="math notranslate nohighlight" id="equation-eq-4">
+<span class="eqno">(3.1.5.4)<a class="headerlink" href="#equation-eq-4" title="Link to this equation"></a></span>\[\mathrm{A}_{\mathrm{re}}=1-\text{PLR}\left(\frac{\mathrm{D}_{\mathrm{i}}}{\mathrm{D}}\right)^2\]</div>
+<p>being <span class="math notranslate nohighlight">\(\mathrm{D}_{\mathrm{i}}\)</span> the pile inner diameter and <span class="math notranslate nohighlight">\(\text{PLR}\)</span> the ratio of the plug length to the pile embedment which can be approximated by Eq. <a class="reference internal" href="#equation-eq-5">(3.1.5.5)</a>.</p>
+<div class="math notranslate nohighlight" id="equation-eq-5">
+<span class="eqno">(3.1.5.5)<a class="headerlink" href="#equation-eq-5" title="Link to this equation"></a></span>\[\text{PLR} \approx \tanh \left[0.3\left(\frac{D_i}{d_{CPT}}\right)^{0.5}\right]\]</div>
+<p>The <span class="math notranslate nohighlight">\(\Delta \sigma'_{rd}\)</span> term in Eq. <a class="reference internal" href="#equation-eq-2">(3.1.5.2)</a> can be calculated as follows:</p>
+<div class="math notranslate nohighlight" id="equation-eq-6">
+<span class="eqno">(3.1.5.6)<a class="headerlink" href="#equation-eq-6" title="Link to this equation"></a></span>\[\Delta \sigma_{r d}^{\prime}=\left(\frac{q_c}{10}\right)\left(\frac{q_c}{\sigma_v^{\prime}}\right)^{-0.33}\left(\frac{d_{CPT}}{D}\right)\]</div>
+<p>The non-linear axial load-transfer function obeys the formulas
+defined by <a class="reference internal" href="#lehanelibittar2020b" id="id2"><span>[LehaneLiBittar2020b]</span></a>.</p>
+</section>
+<section id="load-transfer-function">
+<h3>Load-transfer function<a class="headerlink" href="#load-transfer-function" title="Link to this heading"></a></h3>
+<p>The unified method for sands assumes a parabolic formulae as given in Eq. <a class="reference internal" href="#equation-eq-9">(3.1.5.7)</a>.</p>
+<div class="math notranslate nohighlight" id="equation-eq-9">
+<span class="eqno">(3.1.5.7)<a class="headerlink" href="#equation-eq-9" title="Link to this equation"></a></span>\[\frac{\tau}{\tau_{\mathrm{f}}}=\left(\frac{G}{\tau_{\mathrm{f}}}\right)\left(\frac{z}{2 D}\right)\left[1-\frac{z}{2 z_{\mathrm{f}}}\right]\]</div>
+<p>where the ratio <span class="math notranslate nohighlight">\(G/\tau_{\mathrm{f}}\)</span> is inversely proportional to the displacement <span class="math notranslate nohighlight">\(z_f\)</span> at which the peak shear friction <span class="math notranslate nohighlight">\(\tau_f\)</span> is attained, as shown in Eq. <a class="reference internal" href="#equation-eq-10">(3.1.5.8)</a>.</p>
+<div class="math notranslate nohighlight" id="equation-eq-10">
+<span class="eqno">(3.1.5.8)<a class="headerlink" href="#equation-eq-10" title="Link to this equation"></a></span>\[\frac{G}{\tau_{\mathrm{f}}} = \frac{4D}{z_f}\]</div>
+<p>The API (2011) guidelines recommend a constant value of 0.01 for the normalized peak displacement <span class="math notranslate nohighlight">\(z_f/D\)</span>. The unified method proposes the following expression that allows for a better match with the measured axial backbone curves:</p>
+<div class="math notranslate nohighlight" id="equation-eq-11">
+<span class="eqno">(3.1.5.9)<a class="headerlink" href="#equation-eq-11" title="Link to this equation"></a></span>\[\frac{z_{\mathrm{f}}}{D} =\frac{q_{\mathrm{c}}^{0.5} \sigma_{\mathrm{v}}^{\prime 0.25}}{A p_{\mathrm{a}}^{0.75}}\]</div>
+<p>where <span class="math notranslate nohighlight">\(p_a\)</span> is the atmospheric pressure, equal to 100 kPa, and <span class="math notranslate nohighlight">\(\sigma_{\mathrm{v}}^{\prime}\)</span> is the vertical effective stress. The proposed values for <span class="math notranslate nohighlight">\(A\)</span> are 1250 for compression and half of that, i.e., 625, for tension.</p>
+</section>
+</section>
+<section id="example">
+<h2><span class="section-number">3.1.5.38.2. </span>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h2>
+<p>Below, examples are provided on how to use this material. The input data assumed is based on a typical
+sand site in the Gulf of Mexico (referred to as <em>Site A</em> in <a class="reference internal" href="#lehaneetal2005" id="id3"><span>[LehaneEtAl2005]</span></a>). The simulated
+behavior for this example is shown in the following figure.</p>
+<figure class="align-center">
+<img alt="../../../../_images/tzsandcpt.png" src="../../../../_images/tzsandcpt.png" />
+</figure>
+<p>Users can verify that the internally computed ultimate shaft friction values should be 84.3kPa and
+63.2kPa for compression and tension loading, respectively. These estimates were confirmed by
+comparing them with those computed using the <a class="reference external" href="https://pile-capacity-uwa.com">UWA calculator</a>,
+which led to the same results. This can be observed in the left plot, displaying the simulated
+load-displacement response.</p>
+<p>The right plot compares the normalized form of the simulated <code class="docutils literal notranslate"><span class="pre">TzSandCPT</span></code> response against the
+load-transfer curve recommended in API (2011). This comparison shows a close match, as discussed
+in <a class="reference internal" href="#lehanelibittar2020b" id="id4"><span>[LehaneLiBittar2020b]</span></a>.</p>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>The following constructs a TzSandCPT material with a tag of <strong>1</strong>, <span class="math notranslate nohighlight">\(q_c\)</span> of <strong>39928 kPa</strong>, <span class="math notranslate nohighlight">\(\sigma'_v\)</span> of <strong>203.8 kPa</strong>, <span class="math notranslate nohighlight">\(D\)</span> of <strong>2.44 m</strong>, <span class="math notranslate nohighlight">\(t\)</span> of <strong>0.0445 m</strong>, <span class="math notranslate nohighlight">\(h\)</span> of <strong>40 m</strong>, <span class="math notranslate nohighlight">\(\Delta_z\)</span> of <strong>1 m</strong>, <span class="math notranslate nohighlight">\(d_{CPT}\)</span> of <strong>35.7 mm</strong> and <span class="math notranslate nohighlight">\(p_{a}\)</span> of <strong>100 kPa</strong>.</p>
+<ol class="arabic simple">
+<li><p><strong>Tcl Code</strong></p></li>
+</ol>
+<div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="nv">uniaxialMaterial</span><span class="w"> </span>TzSandCPT<span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">39928</span>.<span class="w"> </span><span class="mf">203.8</span><span class="w"> </span><span class="mf">2.44</span><span class="w"> </span><span class="mf">0.0445</span><span class="w"> </span><span class="mi">40</span>.<span class="w"> </span><span class="mi">1</span>.<span class="w"> </span><span class="mf">35.7</span>e-3<span class="w">  </span><span class="mi">100</span>.
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Python Code</strong></p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">uniaxialMaterial</span><span class="p">(</span><span class="s1">&#39;TzSandCPT&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mf">39928.</span><span class="p">,</span> <span class="mf">203.8</span><span class="p">,</span> <span class="mf">2.44</span><span class="p">,</span> <span class="mf">0.0445</span><span class="p">,</span> <span class="mf">40.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">35.7e-3</span> <span class="p">,</span> <span class="mf">100.</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>More details on the implementation, validation and benchmark of the <code class="docutils literal notranslate"><span class="pre">TzSandCPT</span></code> material are published
+in a <a class="reference external" href="https://www.scipedia.com/public/Sastre_Jurado_Stuyts*_2024a">conference paper in the ISC’7 Proceedings</a>.</p>
+<p>Code Developed by: <strong>csasj</strong></p>
+<div role="list" class="citation-list">
+<div class="citation" id="lehaneetal2005" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">LehaneEtAl2005</a><span class="fn-bracket">]</span></span>
+<p>Lehane, B. M., Schneider, J. A. A., &amp; Xu, X. (2005). A review of design methods for offshore driven piles in siliceous sand.</p>
+</div>
+<div class="citation" id="lehaneetal2020a" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">LehaneEtAl2020a</a><span class="fn-bracket">]</span></span>
+<p>Lehane, B. M., Liu, Z., Bittar, E., Nadim, F., Lacasse, S., Jardine, R., Carotenuto, P., Rattley, M., Gavin, K., &amp; More Authors (2020). A New ‘Unified’ CPT-Based Axial Pile Capacity Design Method for Driven Piles in Sand. In Z. Westgate (Ed.), Proceedings Fourth International Symposium on Frontiers in Offshore Geotechnics (pp. 462-477). Article 3457</p>
+</div>
+<div class="citation" id="lehanelibittar2020b" role="doc-biblioentry">
+<span class="label"><span class="fn-bracket">[</span>LehaneLiBittar2020b<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id2">1</a>,<a role="doc-backlink" href="#id4">2</a>)</span>
+<p>Lehane, B. M., Li, L., &amp; Bittar, E. J. (2020). Cone penetration test-based load-transfer formulations for driven piles in sand. Geotechnique Letters, 10(4), 568-574.</p>
+</div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, The Regents of the University of California.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2431545-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-2431545-1', {
+          'anonymize_ip': false,
+      });
+    </script>  
+
+  <style>
+         .wy-nav-content { max-width: none; }
+  </style>
+
+
+
+</body>
+</html>

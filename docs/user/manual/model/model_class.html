@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3.1.2. Model Class &mdash; OpenSees Documentation  documentation</title>
+  <title>Model Class &mdash; OpenSees Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=224b24c6" />
@@ -21,9 +21,7 @@
         <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="3.1.3. node Command" href="node.html" />
-    <link rel="prev" title="3.1.1. model Command" href="model.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,34 +45,10 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Applications for Users</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../interpreters.html">1. OpenSees Interpreters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../install.html">2. Installation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../userManual.html">3. Command Manual</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="../modelCommands.html">3.1. Model Commands</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="model.html">3.1.1. model Command</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.2. Model Class</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#Model"><code class="docutils literal notranslate"><span class="pre">Model</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="node.html">3.1.3. node Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="spConstraints.html">3.1.4. SP_Constraint Commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="mpConstraints.html">3.1.5. MP_Constraint Commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../material/uniaxialMaterial.html">3.1.6. uniaxialMaterial Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../material/ndMaterial.html">3.1.7. nDMaterial Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../section.html">3.1.8. section Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="geomTransf.html">3.1.9. Geometric Transformation Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="element.html">3.1.10. Element Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="timeSeries.html">3.1.11. Time Series Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pattern.html">3.1.12. Pattern Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="damping.html">3.1.13. Damping Commands</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../analysisCommands.html">3.2. Analysis Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../outputCommands.html">3.3. Output Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../miscCommands.html">3.4. Misc. Commands</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../userManual.html">3. Command Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../userExamples.html">4. Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../messageBoard.html">5. Questions, Bugs &amp; Feature Requests</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../developer/license.html">6. Copyright and License</a></li>
@@ -103,9 +77,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../../userManual.html"><span class="section-number">3. </span>Command Manual</a></li>
-          <li class="breadcrumb-item"><a href="../modelCommands.html"><span class="section-number">3.1. </span>Model Commands</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">3.1.2. </span>Model Class</li>
+      <li class="breadcrumb-item active">Model Class</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/user/manual/model/model_class.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -116,7 +88,7 @@
            <div itemprop="articleBody">
              
   <section id="model-class">
-<span id="modelclass"></span><h1><span class="section-number">3.1.2. </span>Model Class<a class="headerlink" href="#model-class" title="Link to this heading"></a></h1>
+<span id="modelclass"></span><h1>Model Class<a class="headerlink" href="#model-class" title="Link to this heading"></a></h1>
 <p>The <code class="docutils literal notranslate"><span class="pre">Model</span></code> class is an alternative to the <code class="docutils literal notranslate"><span class="pre">model</span></code> command in Python
 that creates an isolated model that is safe from global state corruption.
 An instance of <code class="docutils literal notranslate"><span class="pre">Model</span></code> has all of the standard OpenSees modeling commands
