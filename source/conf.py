@@ -192,7 +192,7 @@ exclude_patterns = [
 
 # -- Options for HTML output -------------------------------------------------
 
-html_baseurl       = "https://xara.so/"
+html_baseurl       = "https://opensees.stairlab.io/"
 sitemap_url_scheme = "{link}"
 
 html_theme = "sphinx_book_theme" #"pydata_sphinx_theme" #"sphinx_rtd_theme"
