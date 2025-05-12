@@ -6,4 +6,6 @@ sphinx-tabs
 sphinx-sitemap
 sphinx-copybutton
 sphinxcontrib-bibtex
+xara
+opensees
 
